@@ -1,0 +1,4 @@
+{
+	"cmd":["myplatex.bat","$file","$file_base_name"],
+	"encoding": "cp932"
+}

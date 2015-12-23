@@ -1,0 +1,64 @@
+[
+// 行頭に移動してラインと日付と１０行の改行を挿入するmacro
+// Package"Insert Date"と自作Snippet"line_under"が必要
+// 以下のようにキーボードショートカットを登録するといい
+// 	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
+	// 最上段に移動
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bof"
+		},
+		"command": "move_to"
+	},
+	// 改行
+	{
+		"args":
+		{
+			"characters": "\n\n\n\n\n\n\n\n\n\n"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "\n\n\n\n\n\n\n\n\n\n"
+		},
+		"command": "insert"
+	},
+	// 最上段に移動
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bof"
+		},
+		"command": "move_to"
+	},
+	// line_under.sublime-snippetを使用
+	{
+		"args":
+		{
+			"characters": "_"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"default": "	",
+			"exact": false
+		},
+		"command": "insert_best_completion"
+	},
+	// 日付の挿入
+	// Package "Insert Date"を導入すること
+	{
+		"args":
+		{
+			"format": "%x"
+		},
+		"command": "insert_date"
+	}
+]

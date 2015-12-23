@@ -1,0 +1,57 @@
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/User/Tubnil_kai.tmTheme",
+	"detect_slow_plugins": false,
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"enable_tab_scrolling": true,
+	"file_exclude_patterns":
+	[
+		"*.exe",
+		"*.zip",
+		"*.lnk",
+		"*.db",
+		"*.pptm",
+		"*.docx",
+		"*.pdf",
+		"*.dwt",
+		"*.bak",
+		"*.xlsx",
+		"*.ex4",
+		"*.ex4old"
+	],
+	"find_selected_text": true,
+	"font_face": "Meiryo",
+	"font_size": 9,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"GotoRecent",
+		"LaTeXTools",
+		"SublimeEvernote",
+		"Theme - Flatland",
+		"Theme - Phoenix",
+		"Theme - Tech49",
+		"TrailingSpaces",
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"*.ex4",
+		"*.log"
+	],
+	"line_padding_top": 2,
+	"match_brackets_angle": true,
+	"preview_on_click": true,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_panel_on_build": true,
+	"sidebar_folders": false,
+	"tab_size": 4,
+	"theme": "Nil.sublime-theme",
+	"translate_spaces_to_tabs": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"'-:,.~!@#$%^&;*|+=[]<>{}`~?_　。、「」！？【】『』＜＞～・",
+	"word_wrap": true
+}

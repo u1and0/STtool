@@ -1,0 +1,45 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"GotoRecent",
+		"SublimeEvernote"
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"AAAPackageDev",
+		"BracketHighlighter",
+		"ConvertToUTF8",
+		"Evernote",
+		"Expand Selection to Quotes",
+		"Expand Selection to Whitespace",
+		"Gnuplot",
+		"GotoRecent",
+		"IMESupport",
+		"INI",
+		"InputSequence",
+		"InsertDate",
+		"LaTeXTools",
+		"MetaQuotes (MQL4) Compiler",
+		"MetaQuotes (MQL4) Language Package",
+		"Package Control",
+		"Preferences Editor",
+		"SideBarEnhancements",
+		"Sublime Files",
+		"SublimeEvernote",
+		"Sublimerge Pro",
+		"Super Calculator",
+		"Terminal",
+		"Theme - Flatland",
+		"Theme - Nil",
+		"Theme - Phoenix",
+		"Theme - Tech49",
+		"TrailingSpaces",
+		"VBDotNet"
+	],
+	"repositories":
+	[
+		"https://github.com/kazu1107/InputSequence.git"
+	]
+}
