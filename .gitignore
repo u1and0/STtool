@@ -11,3 +11,6 @@
 FileHistory*.*
 Evernote.sublime-settings
 *.cache
+encoding_cache.json
+Package Control.*
+!Package Control.sublime-settings
