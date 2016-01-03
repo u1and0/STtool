@@ -33,7 +33,6 @@
 		"Theme - Flatland",
 		"Theme - Phoenix",
 		"Theme - Tech49",
-		"TrailingSpaces",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -50,8 +49,7 @@
 	"sidebar_folders": false,
 	"tab_size": 4,
 	"theme": "Nil.sublime-theme",
-	"translate_spaces_to_tabs": true,
-	"trim_trailing_white_space_on_save": true,
+	"translate_spaces_to_tabs": false,
 	"word_separators": "./\\()\"'-:,.~!@#$%^&;*|+=[]<>{}`~?_　。、「」！？【】『』＜＞～・",
 	"word_wrap": true
 }

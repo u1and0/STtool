@@ -14,25 +14,137 @@
 			<key>comment</key>
 			<string>__以下</string>
 			<key>match</key>
-			<string>^\_\_(\s|\_|.)*</string>
+			<string>^\_{2}(\s|\_|.)*</string>
 			<key>name</key>
 			<string>meta.package</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>--以下</string>
+			<string>--以下(Markdownのライン)</string>
 			<key>match</key>
-			<string>^\-\-(\s|\-|.)*</string>
+			<string>^\-{2}(\s|\-|.)*</string>
 			<key>name</key>
 			<string>entity.name.type</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>#と数字、ドット、ハイフン</string>
+			<string>行頭の*か+か-(Markdownの項目)</string>
 			<key>match</key>
-			<string>#(\d|\-|\.)+</string>
+			<string>(^|\s)(((\*|\+|\-)\s)|・)</string>
 			<key>name</key>
-			<string>keyword.control</string>
+			<string>keyword.control.import</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>カッコ内の数字</string>
+			<key>match</key>
+			<string>\((\d|\.|\-)+\)</string>
+			<key>name</key>
+			<string>constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>行頭のカッコ内の英字1文字</string>
+			<key>match</key>
+			<string>(^|\s)\(\w\)</string>
+			<key>name</key>
+			<string>constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>行頭にある数字とドット(Markdownの数字項目)</string>
+			<key>match</key>
+			<string>^\d\.\s</string>
+			<key>name</key>
+			<string>constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>&lt;&gt;内</string>
+			<key>match</key>
+			<string>\&lt;+[^\&gt;]+\&gt;+</string>
+			<key>name</key>
+			<string>storage</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>&lt;&gt;内</string>
+			<key>match</key>
+			<string>＜+[^＞]+＞+</string>
+			<key>name</key>
+			<string>storage</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>「」内</string>
+			<key>match</key>
+			<string>「[^」]*」</string>
+			<key>name</key>
+			<string>storage</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>飾りカッコ【】内</string>
+			<key>match</key>
+			<string>【[^】]*】</string>
+			<key>name</key>
+			<string>storage</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>[]内</string>
+			<key>match</key>
+			<string>\[+[^\]]+\]+</string>
+			<key>name</key>
+			<string>keyword.control.import</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>ダブルクォーテーション内</string>
+			<key>match</key>
+			<string>"[^"]*"</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>シングルクォーテーション内</string>
+			<key>match</key>
+			<string>\'[^\']*\'</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>**&lt;スペース&gt;文字&lt;スペース&gt;**(Markdownの太字)</string>
+			<key>match</key>
+			<string>\s\*{2}[^(\*{2}\s)]*\*{2}\s</string>
+			<key>name</key>
+			<string>punctuation.definition.string.begin</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>*&lt;スペース&gt;文字&lt;スペース&gt;*(Markdownのイタリック体)</string>
+			<key>match</key>
+			<string>\s\*[^(\*\s)]*\*\s</string>
+			<key>name</key>
+			<string>support.type</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>~~&lt;スペース&gt;文字&lt;スペース&gt;~~(Markdownの打ち消し文字)</string>
+			<key>match</key>
+			<string>(~~)[^(~~)]*(~~)</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>バッククォート内(Markdownのコード)</string>
+			<key>match</key>
+			<string>`[^`]*(\s|\`|.)</string>
+			<key>name</key>
+			<string>meta.diff.git-commit</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -44,99 +156,43 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>行頭の+か-</string>
+			<string>()[]内のhttp:かhttps:以下(Markdownのurl)</string>
 			<key>match</key>
-			<string>(^|\s)((\+|\-)|・)</string>
-			<key>name</key>
-			<string>keyword.control.import</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>カッコ内の数字</string>
-			<key>match</key>
-			<string>(^|\s)\((\d|\.|\-)+\)</string>
-			<key>name</key>
-			<string>constant</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>[]内の文字</string>
-			<key>match</key>
-			<string>(^|\s)\[.+\]</string>
-			<key>name</key>
-			<string>keyword.control.import</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>&lt;&gt;,「」内の文字</string>
-			<key>match</key>
-			<string>(^|\s)(「|\&lt;).+(」|\&gt;)</string>
-			<key>name</key>
-			<string>storage</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>ダブルクォーテーション</string>
-			<key>match</key>
-			<string>".+"</string>
-			<key>name</key>
-			<string>keyword.operator</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>シングルクォーテーション内</string>
-			<key>match</key>
-			<string>\'.+\'</string>
-			<key>name</key>
-			<string>keyword.operator</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>{}内の文字</string>
-			<key>match</key>
-			<string>\{.+\}</string>
-			<key>name</key>
-			<string>keyword.operator</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>@+半角スペース以下</string>
-			<key>match</key>
-			<string>@\s.+</string>
-			<key>name</key>
-			<string>support.function</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>http:かhttps:以下</string>
-			<key>match</key>
-			<string>http(:|s:)\S.*</string>
+			<string>\(http(:|s:)\S.+\)</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>*+半角スペース以下</string>
+			<string>行頭のhttp:かhttps:以下</string>
 			<key>match</key>
-			<string>\*.+</string>
+			<string>(^|\s)http(:|s:)\S+</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>#一個以上と半角スペース以下(Markdownの見出し)</string>
+			<key>match</key>
+			<string>\#+\s.+</string>
 			<key>name</key>
 			<string>meta.tag</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>コメントアウト</string>
+			<string>@ 半角スペース 半角スペース以外の文字にマッチ、末尾がスペース2つ以上</string>
 			<key>match</key>
-			<string>//.*</string>
+			<string>(@|＠)\s.*\S(\s{3,})$</string>
 			<key>name</key>
-			<string>comment</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>/**/内の文字(ブロックコメントアウト)改行までどう含めるかが課題</string>
+			<string>コメントアウト</string>
 			<key>match</key>
-			<string>\/\*.*</string>
+			<string>//\s.*</string>
 			<key>name</key>
-			<string>source comment.block</string>
+			<string>comment</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
