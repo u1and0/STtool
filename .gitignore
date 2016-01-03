@@ -14,3 +14,4 @@ Evernote.sublime-settings
 encoding_cache.json
 Package Control.*
 !Package Control.sublime-settings
+FX_*.*
