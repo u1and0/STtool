@@ -1,10 +1,16 @@
 [
-// ver7.1
-// -----------------------------------Update7.1--------------------------
+// sublime-keymap ver7.2
+// <UPDATE7.2>
+// + Auto pair *
+// 	select内を*でくくる
+// 	他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
+// + Auto pair ~
+// 	打消し線~~が打たれる
+// <UPDATE7.1>
 // + Auto-pair percent %の自動補完
 // + "ctrl+p","ctrl+w" ワークスペースの保存
 // + "ctrl+e","ctrl+f" evernote search_note
-// -----------------------------------Update7.0--------------------------
+// <UPDATE7.0>
 // + "ctrl+alt+up"
 // + "ctrl+alt+down"
 // + "ctrl+p","ctrl+s"
@@ -153,6 +159,135 @@
 			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
 		//"source.dosbatch"のスコープ内でのみ動作可能にする
 			{"key": "selector", "operator": "equal", "operand": "source.dosbatch"}
+		]
+	},
+// Auto-pair *
+	// { "keys": ["*"], "command": "insert_snippet", "args": {"contents": " *$0* "}, "context":
+	// 	[
+	// 		{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	// 		{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	// 		{ "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|>|$)", "match_all": true },
+	// 		{ "key": "preceding_text", "operator": "not_regex_contains", "operand": "[*a-zA-Z0-9_]$", "match_all": true },
+	// 		{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+	// 	//"text.enhanced"のスコープ内でのみ動作可能にする
+	// 		{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+	// 	]
+	// },
+	{ "keys": ["*"], "command": "insert_snippet", "args": {"contents": "*${0:$SELECTION}*"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["*"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^*", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	// { "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"}, "context":
+	// 	[
+	// 		{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	// 		{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	// 		{ "key": "preceding_text", "operator": "regex_contains", "operand": "*$", "match_all": true },
+	// 		{ "key": "following_text", "operator": "regex_contains", "operand": "^*", "match_all": true },
+	// 		{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+	// 		{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+	// 	//"text.enhanced"のスコープ内でのみ動作可能にする
+	// 		{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		// ]
+	// },
+// Auto-pair ~~
+	{ "keys": ["~"], "command": "insert_snippet", "args": {"contents": " ~~$0~~ "}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|>|$)", "match_all": true },
+			{ "key": "preceding_text", "operator": "not_regex_contains", "operand": "[~~a-zA-Z0-9_]$", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["~"], "command": "insert_snippet", "args": {"contents": " ~~${0:$SELECTION}~~ "}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["~"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^~~", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "preceding_text", "operator": "regex_contains", "operand": "~~$", "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^~", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+// Auto-pair `
+	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": " `$0` "}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|>|$)", "match_all": true },
+			{ "key": "preceding_text", "operator": "not_regex_contains", "operand": "[`a-zA-Z0-9_]$", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": " `${0:$SELECTION}` "}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["`"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^`", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "preceding_text", "operator": "regex_contains", "operand": "`$", "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^~", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
 		]
 	}
 ]

@@ -1,5 +1,7 @@
 {
 	"bootstrapped": true,
+	"http_proxy": "http://[proxy_url]:[proxy_port]",
+	"https_proxy": "https://[proxy_url]:[proxy_port]",
 	"in_process_packages":
 	[
 		"GotoRecent",
@@ -9,11 +11,13 @@
 	[
 		"1337 Color Scheme",
 		"AAAPackageDev",
+		"All Autocomplete",
 		"BracketHighlighter",
 		"ConvertToUTF8",
 		"Evernote",
 		"Expand Selection to Quotes",
 		"Expand Selection to Whitespace",
+		"GitHub Markdown Snippets",
 		"Gnuplot",
 		"GotoRecent",
 		"IMESupport",
@@ -38,6 +42,8 @@
 		"TrailingSpaces",
 		"VBDotNet"
 	],
+	"proxy_password": "[password]",
+	"proxy_username": "[username]",
 	"repositories":
 	[
 		"https://github.com/kazu1107/InputSequence.git"

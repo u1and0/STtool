@@ -144,7 +144,7 @@
 			<key>match</key>
 			<string>`[^`]*(\s|\`|.)</string>
 			<key>name</key>
-			<string>meta.diff.git-commit</string>
+			<string>meta.diff.header</string>
 		</dict>
 		<dict>
 			<key>comment</key>

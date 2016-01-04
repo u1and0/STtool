@@ -15,3 +15,5 @@ encoding_cache.json
 Package Control.*
 !Package Control.sublime-settings
 FX_*.*
+Todo.md
+c2u_tmp
