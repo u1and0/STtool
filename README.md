@@ -133,12 +133,20 @@ keymapで`ctrl+alt+/`で起動するように設定している
 
 
 -----------------------------------------------------------------------
-## Enhanced text ver3.0
+## Enhanced text ver3.1
 自分用シンタックス。.txtや.md形式のファイルをより見やすくするために作った
 * EnhancedTXT.sublime-settings
 * EnhancedTXT.tmLanguage
 * EnhancedTXT.tmLanguage.cache
 * EnhancedTXT.YAML-tmLanguage
+
+<<UPDATE3.1>>
++ <>の色を緑に変更
+	- 元々緑だった@は紫に変更
++項目番号の表示修正
+	- 2桁以上の数字に対応できるようにした
+	- 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした
+		{"match": "(\\s|^)\\d+\\.\\s",
 
 <UPDATE3.0>
 + MarkDown記法への対応  

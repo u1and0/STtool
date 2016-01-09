@@ -54,7 +54,7 @@
 			<key>comment</key>
 			<string>行頭にある数字とドット(Markdownの数字項目)</string>
 			<key>match</key>
-			<string>^\d\.\s</string>
+			<string>(\s|^)\d+\.\s</string>
 			<key>name</key>
 			<string>constant</string>
 		</dict>
@@ -64,7 +64,7 @@
 			<key>match</key>
 			<string>\&lt;+[^\&gt;]+\&gt;+</string>
 			<key>name</key>
-			<string>storage</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -72,7 +72,7 @@
 			<key>match</key>
 			<string>＜+[^＞]+＞+</string>
 			<key>name</key>
-			<string>storage</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -184,7 +184,7 @@
 			<key>match</key>
 			<string>(@|＠)\s.*\S(\s{3,})$</string>
 			<key>name</key>
-			<string>support.function</string>
+			<string>constant.character.escaped</string>
 		</dict>
 		<dict>
 			<key>comment</key>

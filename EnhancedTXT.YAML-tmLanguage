@@ -1,6 +1,13 @@
 # ***************************************************
-# EnhancedText ver3.0
-## UPDATE3.0  
+# EnhancedText ver3.1
+#<<UPDATE3.1>>
+# + <>の色を緑に変更
+#      - 元々緑だった@は紫に変更
+# +項目番号の表示修正
+#      - 2桁以上の数字に対応できるようにした
+#      - 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした
+#        {"match": "(\\s|^)\\d+\\.\\s",
+#<<UPDATE3.0>>
 # + MarkDown記法への対応  
 #    - [ライン]ハイフン2個以上並んだとき、以下を色変え  
 #    - [項目]+,-,*とスペース  
@@ -58,9 +65,10 @@
               #background mint green / white---markup.inserted
               #background blue / white---meta.diff.header
               #background green / yellow---markup.inserted.git_gutter
+              #background orange / orange---keyword.control.memory
 #-------------------------------------------------------------------------
+              #()内はtheme-sankasan
               #red---constant.character.escaped
-              #red---keyword.control.memory
               #yellow(orrange)---markup.changed.git_gutter
               #blue(orrange)---constant
               #dark blue(dark orrange)---keyword.operator
@@ -76,7 +84,7 @@
               #blue---variable.language
               #blue---keyword.control.import
               #purple---variable.other.constant/constant.numeric
-              #light purple---keyword
+              #skyblue(light purple)---keyword
               #pink ---entity.other.inherited-class
               #dark pink---keyword.control
 #----------------------------------------------------------------------------
@@ -118,7 +126,7 @@
        "name": "constant",
        "comment": "行頭のカッコ内の英字1文字"
        },
-       {"match": "^\\d\\.\\s",
+       {"match": "(\\s|^)\\d+\\.\\s",
        "name": "constant",
        "comment": "行頭にある数字とドット(Markdownの数字項目)"
        },
@@ -127,11 +135,11 @@
 
 # カッコ内
        {"match": "\\<+[^\\>]+\\>+",
-       "name": "storage",
+       "name": "support.function",
        "comment": "<>内"
        },
        {"match": "＜+[^＞]+＞+",
-       "name": "storage",
+       "name": "support.function",
        "comment": "<>内"
        },
        {"match": "「[^」]*」",
@@ -205,7 +213,7 @@
        "comment": "#一個以上と半角スペース以下(Markdownの見出し)"
        },
       {"match": "(@|＠)\\s.*\\S(\\s{3,})$",
-       "name": "support.function",
+       "name": "constant.character.escaped",
        "comment": "@ 半角スペース 半角スペース以外の文字にマッチ、末尾がスペース2つ以上"
        },
        {"match": "//\\s.*",
