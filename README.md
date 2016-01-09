@@ -1,3 +1,28 @@
++ [keymap & mousemap & setting](#keymap & mousemap & setting)
++ [Theme](#theme)
++ [syntax settings](#syntax settings)
++ [build series](#build series)
++ [initial series](#initial series)
++ [insert date](#insert date)
++ [line series](#line series)
++ [Enhanced text ver3.1](#enhanced text ver3.1)
++ [UPDATE3.1](#update3.1)
++ [UPDATE3.0](#update3.0)
++ [package's sublime setting](#package's sublime setting)
++ [なんだこれ](#なんだこれ)
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
 ## keymap & mousemap & setting
 * Preferences.sublime-settings
 	主な設定version わかんない
@@ -137,7 +162,6 @@ keymapで`ctrl+alt+/`で起動するように設定している
 自分用シンタックス。.txtや.md形式のファイルをより見やすくするために作った
 * EnhancedTXT.sublime-settings
 * EnhancedTXT.tmLanguage
-* EnhancedTXT.tmLanguage.cache
 * EnhancedTXT.YAML-tmLanguage
 
 ### UPDATE3.1
@@ -145,7 +169,7 @@ keymapで`ctrl+alt+/`で起動するように設定している
 	- 元々緑だった@は紫に変更
 + 項目番号の表示修正
 	- 2桁以上の数字に対応できるようにした
-	- 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした
+	- 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした  
 		{"match": "(\\s|^)\\d+\\.\\s",
 
 ### UPDATE3.0
