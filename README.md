@@ -27,24 +27,31 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 
 ## keymap & mousemap & setting
 * Preferences.sublime-settings
-	主な設定version わかんない
+  主な設定version わかんない
 * Default (Linux).sublime-keymap
 * Default (OSX).sublime-keymap
 * Default (Windows).sublime-keymap
-	### UPDATE7.2
+
+
+
+	UPDATE7.2
 	+ Auto pair \*
 		select内を*でくくる
 		他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
 	+ Auto pair ~
 		打消し線~~が打たれる
-	+ Auto pair  \` 
-	### UPDATE7.1
+	+ Auto pair  \`  
+
+
+
+
+	UPDATE7.1
 	- Auto-pair percent %の自動補完  
 	- "ctrl+p","ctrl+w" ワークスペースの保存  
 	- "ctrl+e","ctrl+f" evernote search_note  
 
-* Default (Windows).sublime-mousemap
-	### UPDATE3.1
+* Default (Windows).sublime-mousemap  
+	UPDATE3.1
 	+ expand selection to scope
 	+ PageScroll
 	+ soft undo & soft redo
@@ -53,12 +60,13 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 	+ Change tabs
 	+ Select scope~~+ Select all~~
 
-* Default (Windows).sublime-mousemap.txt
+* Default (Windows).sublime-mousemap.txt  
 	sublimetext2から拾ってきたマウスマップのデフォルト  
 	参考用なので拡張子が.txt  
 
-* Default (Windows).sublime-mousemap
-	ver3.1
+* Default (Windows).sublime-mousemap  
+
+	UPDATE3.1
 	+ expand selection to scope
 	+ PageScroll
 	+ soft undo & soft redo
@@ -76,8 +84,7 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 
 -----------------------------------------------------------------------
 ## Theme
-Tubnil_kai.tmTheme
-Tubnil_kai.tmTheme.cache
++ [Tubnil_kai.tmTheme](https://github.com/austinwagner/sublime-sourcepawn/blob/master/Tubnil.sublime-theme)
 
 
 
@@ -170,7 +177,10 @@ keymapで`ctrl+alt+/`で起動するように設定している
 * EnhancedTXT.sublime-settings
 * EnhancedTXT.tmLanguage
 * EnhancedTXT.YAML-tmLanguage
-### UPDATE3.1
+
+
+
+UPDATE3.1
 + <>の色を緑に変更
 	- 元々緑だった@は紫に変更
 + 項目番号の表示修正
@@ -178,7 +188,10 @@ keymapで`ctrl+alt+/`で起動するように設定している
 	- 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした  
 		`{"match": "(\\s|^)\\d+\\.\\s",
 
-### UPDATE3.0
+
+
+
+UPDATE3.0
 + MarkDown記法への対応  
 	- [ライン]ハイフン2個以上並んだとき、以下を色変え  
 	- [項目]+,-,*とスペース  
@@ -211,7 +224,7 @@ keymapで`ctrl+alt+/`で起動するように設定している
 * Package Control.sublime-settings
 * Side Bar.sublime-settings
 * trailing_spaces.sublime-settings
-~~* Evernote.sublime-settings~~		token含まれているからignore
+* ~~Evernote.sublime-settings~~		token含まれているからignore
 
 
 
