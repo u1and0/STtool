@@ -5,9 +5,7 @@
 + [initial series](#initial-series)
 + [insert date](#insert-date)
 + [line series](#line-series)
-+ [Enhanced text ver3.1](#enhanced-text-ver3.1)
-+ [UPDATE3.1](#update3-1)
-+ [UPDATE3.0](#update3-0)
++ [Enhanced text](#enhanced-text)
 + [package's sublime setting](#package's-sublime-setting)
 + [なんだこれ](#なんだこれ)
 
@@ -164,7 +162,7 @@ keymapで`ctrl+alt+/`で起動するように設定している
 * EnhancedTXT.tmLanguage
 * EnhancedTXT.YAML-tmLanguage
 
-### UPDATE3.1
+[UPDATE3.1]  
 + <>の色を緑に変更
 	- 元々緑だった@は紫に変更
 + 項目番号の表示修正
@@ -172,7 +170,7 @@ keymapで`ctrl+alt+/`で起動するように設定している
 	- 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした  
 		{"match": "(\\s|^)\\d+\\.\\s",
 
-### UPDATE3.0
+[UPDATE3.0]  
 + MarkDown記法への対応  
 	- [ライン]ハイフン2個以上並んだとき、以下を色変え  
 	- [項目]+,-,*とスペース  
