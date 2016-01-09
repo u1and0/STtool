@@ -1,4 +1,4 @@
-+ [keymap & mousemap & setting](#keymap)
++ [keymap & mousemap & setting](#keymap--mousemap--setting)
 + [Theme](#theme)
 + [syntax settings](#syntax-settings)
 + [build series](#build-series)
@@ -27,20 +27,20 @@
 * Default (Linux).sublime-keymap
 * Default (OSX).sublime-keymap
 * Default (Windows).sublime-keymap
-	<UPDATE7.2>
+	[UPDATE7.2]
 	+ Auto pair \*
 		select内を*でくくる
 		他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
 	+ Auto pair ~
 		打消し線~~が打たれる
 	+ Auto pair  \` 
-	<ver7.1>  
+	[UPDATE7.1]
 	- Auto-pair percent %の自動補完  
 	- "ctrl+p","ctrl+w" ワークスペースの保存  
 	- "ctrl+e","ctrl+f" evernote search_note  
 
 * Default (Windows).sublime-mousemap
-	<ver3.1>  
+	[UPDATE3.1]
 	+ expand selection to scope
 	+ PageScroll
 	+ soft undo & soft redo
@@ -65,6 +65,11 @@
 
 * Default (Windows).sublime-mousemap.txt  
 	sublimetext2から拾ってきたデフォルト
+
+
+
+
+
 -----------------------------------------------------------------------
 ## Theme
 Tubnil_kai.tmTheme
@@ -191,6 +196,12 @@ keymapで`ctrl+alt+/`で起動するように設定している
 	- ブロックコメントアウト/*は削除  
 
 
+
+
+
+
+
+-----------------------------------------------------------------------
 ## package's sublime setting
 導入しているpackageのセッティング
 * insert_date.sublime-settings
@@ -200,6 +211,8 @@ keymapで`ctrl+alt+/`で起動するように設定している
 ~~* Evernote.sublime-settings~~		token含まれているからignore
 
 
+
+-----------------------------------------------------------------------
 ## なんだこれ
 * ST_csv_edt.sublime-macro
 
