@@ -1,3 +1,7 @@
+# ST tool
+Sublimetext3 で使用しているuser settingやらmacroやらsnippet.  
+以下に適当な分類示す。  
+
 + [keymap & mousemap & setting](#keymap--mousemap--setting)
 + [Theme](#theme)
 + [syntax settings](#syntax-settings)
@@ -27,20 +31,20 @@
 * Default (Linux).sublime-keymap
 * Default (OSX).sublime-keymap
 * Default (Windows).sublime-keymap
-	[UPDATE7.2]
+	### UPDATE7.2
 	+ Auto pair \*
 		select内を*でくくる
 		他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
 	+ Auto pair ~
 		打消し線~~が打たれる
 	+ Auto pair  \` 
-	[UPDATE7.1]
+	### UPDATE7.1
 	- Auto-pair percent %の自動補完  
 	- "ctrl+p","ctrl+w" ワークスペースの保存  
 	- "ctrl+e","ctrl+f" evernote search_note  
 
 * Default (Windows).sublime-mousemap
-	[UPDATE3.1]
+	### UPDATE3.1
 	+ expand selection to scope
 	+ PageScroll
 	+ soft undo & soft redo
@@ -111,7 +115,7 @@ keymapで`ctrl+alt+/`で起動するように設定している
 * Comments (C++).tmPreferences
 	mt4コメントアウトをC++のシンタックスと合わせた
 * comment_out.sublime-macro  
-	 `Enhanced textのコメント` アウト  
+	 `Enhanced text`のコメントアウト  
 * comment_out_bat.sublime-macro  
 	batchのコメントアウト  
 * comment_out_vbnet.sublime-macro  
@@ -166,16 +170,15 @@ keymapで`ctrl+alt+/`で起動するように設定している
 * EnhancedTXT.sublime-settings
 * EnhancedTXT.tmLanguage
 * EnhancedTXT.YAML-tmLanguage
-
-[UPDATE3.1]  
+### UPDATE3.1
 + <>の色を緑に変更
 	- 元々緑だった@は紫に変更
 + 項目番号の表示修正
 	- 2桁以上の数字に対応できるようにした
 	- 行頭だけではなく、先頭文字がスペースまたはタブでも色変え対象とした  
-		{"match": "(\\s|^)\\d+\\.\\s",
+		`{"match": "(\\s|^)\\d+\\.\\s",
 
-[UPDATE3.0]  
+### UPDATE3.0
 + MarkDown記法への対応  
 	- [ライン]ハイフン2個以上並んだとき、以下を色変え  
 	- [項目]+,-,*とスペース  
