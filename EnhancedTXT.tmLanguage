@@ -118,7 +118,7 @@
 			<key>comment</key>
 			<string>**&lt;スペース&gt;文字&lt;スペース&gt;**(Markdownの太字)</string>
 			<key>match</key>
-			<string>\s\*{2}[^(\*{2}\s)]*\*{2}\s</string>
+			<string>(^|\s)\*{2}[^(\*{2})]*\*{2}($|\s)</string>
 			<key>name</key>
 			<string>punctuation.definition.string.begin</string>
 		</dict>
@@ -126,7 +126,7 @@
 			<key>comment</key>
 			<string>*&lt;スペース&gt;文字&lt;スペース&gt;*(Markdownのイタリック体)</string>
 			<key>match</key>
-			<string>\s\*[^(\*\s)]*\*\s</string>
+			<string>(^|\s)\*[^(\*)]*\*($|\s)</string>
 			<key>name</key>
 			<string>support.type</string>
 		</dict>
