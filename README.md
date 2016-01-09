@@ -156,7 +156,7 @@ keymapで`ctrl+alt+/`で起動するように設定している
 
 
 -----------------------------------------------------------------------
-## Enhanced text ver3.1
+## Enhanced text
 自分用シンタックス。.txtや.md形式のファイルをより見やすくするために作った
 * EnhancedTXT.sublime-settings
 * EnhancedTXT.tmLanguage
