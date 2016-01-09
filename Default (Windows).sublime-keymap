@@ -1,5 +1,7 @@
 [
-// sublime-keymap ver7.2
+// sublime-keymap ver7.2.1
+// <UPDATE7.2.1>
+// Auto-pair Back Quotesはスペースを保管しないように変更
 // <UPDATE7.2>
 // + Auto pair *
 // 	select内を*でくくる
@@ -22,7 +24,12 @@
 // + "ctrl+alt+m"
 // + "ctrl+k", "ctrl+m"
 // ---------------------------------------------------------------------
-// User definition
+
+
+
+
+
+// -----------------------------------User definition------------------------------------
 	{ "keys": ["ctrl+alt+t"], "command": "clone_file"},
 	{ "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 20.0 } },
 	{ "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -20.0 } },
@@ -30,19 +37,38 @@
 	{ "keys": ["ctrl+p","ctrl+w"], "command": "save_workspace_as" },
 	{ "keys": ["ctrl+p","ctrl+c"], "command": "close_workspace" },
 
-// Change from Default
+
+
+// -----------------------------------Change from Default------------------------------------
 	{ "keys": ["ctrl+alt+pageup"], "command": "show_at_center" },
 	{ "keys": ["ctrl+alt+pagedown"], "command": "show_at_center" },
 	{ "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
 
-// User definition Installed Package
-	//selection
+
+
+// -----------------------------------User definition macros------------------------------------
+	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
+	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/FX_insertdate.sublime-macro"}, "context":
+		[//"text.enhanced"のスコープ内でのみ動作可能にする
+			{"key": "selector", "operator": "equal", "operand": "text.fx"},
+		]
+	},
+
+
+
+
+
+
+
+
+// -----------------------------------User definition Installed Package------------------------------------
+//selection
 	{ "keys": ["alt+t"], "command": "open_terminal" },
 	{"keys": ["ctrl+alt+m"], "command": "expand_selection_to_quotes"},
 	{ "keys": ["ctrl+k", "ctrl+m"], "command": "expand_selection_to_whitespace" },
-	//evernote
+//evernote
 	{ "keys": ["ctrl+alt+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
 	{ "keys": ["ctrl+e", "ctrl+f"], "command": "search_note" },
 	{ "keys": ["ctrl+e", "ctrl+shift+s"], "command": "send_to_evernote" },
@@ -51,14 +77,27 @@
 	{ "keys": ["ctrl+e", "ctrl+s"], "command": "save_evernote_note"},
 	// , "context": [{"key": "evernote_note"}] }
 
-// User definition macros
-	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
-	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/FX_insertdate.sublime-macro"}, "context":
-		[//"text.enhanced"のスコープ内でのみ動作可能にする
-			{"key": "selector", "operator": "equal", "operand": "text.fx"},
-		]
-	},
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -----------------------------------Auto Pair------------------------------------
 // Auto-pair angle brackets
 	{ "keys": ["<"], "command": "insert_snippet", "args": {"contents": "<$0>"}, "context":
 		[
@@ -118,7 +157,7 @@
 			{ "key": "following_text", "operator": "regex_contains", "operand": "^\\」", "match_all": true }
 		]
 	},
-// Auto-pair percent
+// Auto-pair Percent
 	{ "keys": ["%"], "command": "insert_snippet", "args": {"contents": "%$0%"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -161,7 +200,7 @@
 			{"key": "selector", "operator": "equal", "operand": "source.dosbatch"}
 		]
 	},
-// Auto-pair *
+// Auto-pair Stars
 	// { "keys": ["*"], "command": "insert_snippet", "args": {"contents": " *$0* "}, "context":
 	// 	[
 	// 		{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -204,7 +243,7 @@
 	// 		{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
 		// ]
 	// },
-// Auto-pair ~~
+// Auto-pair Tilde
 	{ "keys": ["~"], "command": "insert_snippet", "args": {"contents": " ~~$0~~ "}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -247,8 +286,8 @@
 			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
 		]
 	},
-// Auto-pair `
-	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": " `$0` "}, "context":
+// Auto-pair Back Quotes
+	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
@@ -259,7 +298,7 @@
 			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
 		]
 	},
-	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": " `${0:$SELECTION}` "}, "context":
+	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}`"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },

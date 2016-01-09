@@ -34,6 +34,11 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 
 
 
+	UPDATE7.2.1
+	+ Auto-pair Back Quotesはスペースを保管しないように変更
+
+
+
 	UPDATE7.2
 	+ Auto pair \*
 		select内を*でくくる
