@@ -1,4 +1,4 @@
-+ [keymap & mousemap & setting](#keymap-&-mousemap-&-setting)
++ [keymap & mousemap & setting](#keymap)
 + [Theme](#theme)
 + [syntax settings](#syntax-settings)
 + [build series](#build-series)
@@ -6,7 +6,7 @@
 + [insert date](#insert-date)
 + [line series](#line-series)
 + [Enhanced text](#enhanced-text)
-+ [package's sublime setting](#package's-sublime-setting)
++ [package's sublime setting](#package)
 + [なんだこれ](#なんだこれ)
 
 
