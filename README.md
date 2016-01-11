@@ -33,6 +33,12 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 * Default (Windows).sublime-keymap
 
 
+	UPDATE7.2.2
+	+ {shift+enter}insert_2spaceNewline.sublime-macro
+		shift + enterで行末にスペース二つ入れてから改行  
+		行間のどの位置から実行しても良い  
+
+
 
 	UPDATE7.2.1
 	+ Auto-pair Back Quotesはスペースを保管しないように変更

@@ -160,16 +160,6 @@
        "name": "meta.diff.header",
        "comment": "バッククォート内(Markdownのコード)"
        },
-       # {"match": "\\s_[^_]*_\\s",
-       # "name": "punctuation.definition.string.begin",
-       # "comment": "_<スペース>文字<スペース>_(イタリック体)"
-       # },
-       #なぜか使えない
-       # {"match": "\\s_{2}[^_{2}].+_{2}\\s",
-       # "name": "punctuation.definition.string.begin",
-       # "comment": "__<スペース>文字<スペース>__, **<スペース>文字<スペース>**(太字)"
-       # },
-       #なぜか使えない
 
 
 # 特定の文字列以下の強調

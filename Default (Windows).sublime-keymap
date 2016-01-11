@@ -1,28 +1,7 @@
 [
-// sublime-keymap ver7.2.1
-// <UPDATE7.2.1>
-// Auto-pair Back Quotesはスペースを保管しないように変更
-// <UPDATE7.2>
-// + Auto pair *
-// 	select内を*でくくる
-// 	他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
-// + Auto pair ~
-// 	打消し線~~が打たれる
-// <UPDATE7.1>
-// + Auto-pair percent %の自動補完
-// + "ctrl+p","ctrl+w" ワークスペースの保存
-// + "ctrl+e","ctrl+f" evernote search_note
-// <UPDATE7.0>
-// + "ctrl+alt+up"
-// + "ctrl+alt+down"
-// + "ctrl+p","ctrl+s"
-// + "ctrl+p","ctrl+c"
-// + "ctrl+alt+pageup"
-// + "ctrl+alt+pagedown"
-// + "alt+shift+up"
-// + "alt+shift+down"
-// + "ctrl+alt+m"
-// + "ctrl+k", "ctrl+m"
+// sublime-keymap ver7.2.2
+// <UPDATE7.2.2>
+// {shift+enter}insert_2spaceNewline.sublime-macro
 // ---------------------------------------------------------------------
 
 
@@ -49,6 +28,7 @@
 
 
 // -----------------------------------User definition macros------------------------------------
+	{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insert_2spaceNewline.sublime-macro"} },
 	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
 	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/FX_insertdate.sublime-macro"}, "context":
 		[//"text.enhanced"のスコープ内でのみ動作可能にする
