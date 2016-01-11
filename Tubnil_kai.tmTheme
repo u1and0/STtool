@@ -49,20 +49,47 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Block comment</string>
+			<string>Comment</string>
 			<key>scope</key>
-			<string>source comment.block</string>
+			<string>comment</string>
 			<key>settings</key>
 			<dict>
-<!-- 				<key>background</key>
-				<string>#070809</string>
- -->				<key>fontStyle</key>
+				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
 				<string>#747166</string>
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>Block comment</string>
+			<key>scope</key>
+			<string>source comment.block</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#333333</string>
+				<key>foreground</key>
+				<string>#DDDDDD</string>
+			</dict>
+		</dict>
+<!-- 		This expression is same as "comment out"
+		<dict>
+			<key>name</key>
+			<string>Block comment</string>
+			<key>scope</key>
+			<string>source comment.block</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#070809</string>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#747166</string>
+			</dict>
+		</dict>
+ -->		<dict>
 			<key>name</key>
 			<string>Operator</string>
 			<key>scope</key>

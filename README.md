@@ -183,6 +183,10 @@ keymapで`ctrl+alt+/`で起動するように設定している
 * EnhancedTXT.tmLanguage
 * EnhancedTXT.YAML-tmLanguage
 
+UPDATE3.1.2
++ カッコ内がシャープ始まりでも色変え(markdonwのページないアンカー)
++ 斜線、太字のコメント変更
+
 
 UPDATE3.1.1
 + 斜線、太字の不具合を修正
