@@ -1,7 +1,8 @@
 [
-// sublime-keymap ver7.2.2
-// <UPDATE7.2.2>
-// {shift+enter}insert_2spaceNewline.sublime-macro
+// sublime-keymap ver7.2.3
+// <UPDATE7.2.3>
+// {ctrl+e,ctrl+o}Evernote:List Recent Notes
+// {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note
 // ---------------------------------------------------------------------
 
 
@@ -52,7 +53,9 @@
 	{ "keys": ["ctrl+alt+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
 	{ "keys": ["ctrl+e", "ctrl+f"], "command": "search_note" },
 	{ "keys": ["ctrl+e", "ctrl+shift+s"], "command": "send_to_evernote" },
-	{ "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note" },
+	// { "keys": ["ctrl+e", "ctrl+o"], "command": "list_recent_notes" },
+	{ "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note", "args": {"max_notes": 10, "by_searching": "*", "order": "updated", "ascending": false}, "caption": "Evernote: List recent notes" },
+	{ "keys": ["ctrl+shift+e", "ctrl+shift+o"], "command": "open_evernote_note" },
 	{ "keys": ["ctrl+e", "ctrl+f"], "command": "open_evernote_note", "args": {"by_searching": true}, "caption": "Evernote: Search Note" },
 	{ "keys": ["ctrl+e", "ctrl+s"], "command": "save_evernote_note"},
 	// , "context": [{"key": "evernote_note"}] }

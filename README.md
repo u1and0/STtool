@@ -33,6 +33,12 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 * Default (Windows).sublime-keymap
 
 
+	UPDATE7.2.3
+	+ {ctrl+e,ctrl+o}Evernote:List Recent Notes
+	+ {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note
+
+
+
 	UPDATE7.2.2
 	+ {shift+enter}insert_2spaceNewline.sublime-macro
 		shift + enterで行末にスペース二つ入れてから改行  
@@ -238,7 +244,8 @@ UPDATE3.0
 
 -----------------------------------------------------------------------
 ## package's sublime setting
-導入しているpackageのセッティング
+導入しているpackageのセッティング  
+使っているpackage見たいときはPackage Control.sublime-settings参照
 * insert_date.sublime-settings
 * Package Control.sublime-settings
 * Side Bar.sublime-settings
