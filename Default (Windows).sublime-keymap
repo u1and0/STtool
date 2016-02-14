@@ -1,8 +1,10 @@
 [
-// sublime-keymap ver7.2.3
-// <UPDATE7.2.3>
-// {ctrl+e,ctrl+o}Evernote:List Recent Notes
-// {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note
+// sublime-keymap ver7.2.5
+// <UPDATE7.2.5>
+// + Quick Change Project as ["ctrl+alt+p"]
+// <UPDATE7.2.4>
+// + Remove "save_project_as" and "save_workspace_as"
+// + Close work space as ["ctrl+k","ctrl+c"]
 // ---------------------------------------------------------------------
 
 
@@ -13,10 +15,9 @@
 	{ "keys": ["ctrl+alt+t"], "command": "clone_file"},
 	{ "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 20.0 } },
 	{ "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -20.0 } },
-	{ "keys": ["ctrl+p","ctrl+s"], "command": "save_project_as" },
-	{ "keys": ["ctrl+p","ctrl+w"], "command": "save_workspace_as" },
-	{ "keys": ["ctrl+p","ctrl+c"], "command": "close_workspace" },
-
+	{ "keys": ["ctrl+k","ctrl+c"], "command": "close_workspace" },
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+	// { "keys": [ "ctrl+alt+b" ], "command": "preview_in_browser"},
 
 
 // -----------------------------------Change from Default------------------------------------
@@ -54,8 +55,8 @@
 	{ "keys": ["ctrl+e", "ctrl+f"], "command": "search_note" },
 	{ "keys": ["ctrl+e", "ctrl+shift+s"], "command": "send_to_evernote" },
 	// { "keys": ["ctrl+e", "ctrl+o"], "command": "list_recent_notes" },
-	{ "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note", "args": {"max_notes": 10, "by_searching": "*", "order": "updated", "ascending": false}, "caption": "Evernote: List recent notes" },
-	{ "keys": ["ctrl+shift+e", "ctrl+shift+o"], "command": "open_evernote_note" },
+	{ "keys": ["ctrl+shift+e", "ctrl+shift+o"], "command": "open_evernote_note", "args": {"max_notes": 10, "by_searching": "*", "order": "updated", "ascending": false}, "caption": "Evernote: List recent notes" },
+	{ "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note" },
 	{ "keys": ["ctrl+e", "ctrl+f"], "command": "open_evernote_note", "args": {"by_searching": true}, "caption": "Evernote: Search Note" },
 	{ "keys": ["ctrl+e", "ctrl+s"], "command": "save_evernote_note"},
 	// , "context": [{"key": "evernote_note"}] }

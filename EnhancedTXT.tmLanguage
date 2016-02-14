@@ -148,17 +148,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>行頭の&gt;以下</string>
+			<string>行頭の&gt;</string>
 			<key>match</key>
-			<string>^\&gt;.*</string>
+			<string>^\&gt;</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>()[]内のhttp:かhttps:以下(Markdownのurl)</string>
+			<string>直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL)</string>
 			<key>match</key>
-			<string>\((#|(http(:|s:)))\S.+\)</string>
+			<string>(?&lt;=\])(\(.*\))</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>

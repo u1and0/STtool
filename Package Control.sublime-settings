@@ -10,7 +10,6 @@
 	"installed_packages":
 	[
 		"1337 Color Scheme",
-		"AAAPackageDev",
 		"All Autocomplete",
 		"BracketHighlighter",
 		"ConvertToUTF8",
@@ -27,10 +26,13 @@
 		"LaTeXTools",
 		"Markdown Extended",
 		"Markdown Preview",
+		"MarkdownTOC",
 		"MetaQuotes (MQL4) Compiler",
 		"MetaQuotes (MQL4) Language Package",
 		"Package Control",
+		"PackageDev",
 		"Preferences Editor",
+		"Qiita for Sublime",
 		"SideBarEnhancements",
 		"Sublime Files",
 		"SublimeEvernote",
