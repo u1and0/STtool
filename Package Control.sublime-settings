@@ -4,6 +4,8 @@
 	"https_proxy": "https://[proxy_url]:[proxy_port]",
 	"in_process_packages":
 	[
+		"GotoRecent",
+		"SublimeEvernote"
 	],
 	"installed_packages":
 	[
