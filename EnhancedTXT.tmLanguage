@@ -148,9 +148,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>行頭の&gt;</string>
+			<string>行頭の1個以上の&gt;</string>
 			<key>match</key>
-			<string>^\&gt;</string>
+			<string>^\&gt;+</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
