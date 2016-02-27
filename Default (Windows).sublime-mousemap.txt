@@ -1,4 +1,5 @@
 [//sublime default
+//sublimetext2から持ってきた
 	// Basic drag select
 	{
 		"button": "button1", "count": 1,

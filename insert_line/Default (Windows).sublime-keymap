@@ -1,0 +1,44 @@
+[
+/*
+insert_line ver0
+Insert underline at either end of selection
+<<USAGE>>
+Select character, then press underbar "_"
+See also "line_under.sublime-snippet"
+*/
+
+
+
+// Auto-pair Underline
+	{ "keys": ["_"], "command": "insert_snippet", "args": {"contents": " __${0:$SELECTION}__________________________ "}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			// {"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["_"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^__", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			// {"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+	{ "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "preceding_text", "operator": "regex_contains", "operand": "__$", "match_all": true },
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^_", "match_all": true },
+			{ "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
+			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
+		//"text.enhanced"のスコープ内でのみ動作可能にする
+			// {"key": "selector", "operator": "equal", "operand": "text.enhanced"}
+		]
+	},
+]
