@@ -30,9 +30,6 @@
 		"GotoRecent",
 		"LaTeXTools",
 		"SublimeEvernote",
-		"Theme - Flatland",
-		"Theme - Phoenix",
-		"Theme - Tech49",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -48,7 +45,7 @@
 	"show_panel_on_build": true,
 	"sidebar_folders": false,
 	"tab_size": 4,
-	"theme": "Nil.sublime-theme",
+	"theme": "Nexus.sublime-theme",
 	"translate_spaces_to_tabs": false,
 	"word_separators": "./\\()\"'-:,.~!@#$%^&;*|+=[]<>{}`~?_　。、「」！？【】『』＜＞～・",
 	"word_wrap": true

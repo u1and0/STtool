@@ -1,0 +1,719 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"n",
+				"name"
+			],
+			[
+				"Y",
+				"Yellow"
+			],
+			[
+				"en",
+				"endif"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/U1and0/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1033,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "EnhancedTXT.YAML-tmLanguage",
+			"settings":
+			{
+				"buffer_size": 8475,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/PackageDev/Support/Convert to ....sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					""
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"JSON"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"Property List"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"YAML (Block Style)"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"YAML (Default Style)"
+				],
+				[
+					"Packages/User/html.sublime-build",
+					""
+				],
+				[
+					"Packages/User/platex.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/PackageDev/Support/Convert to ....sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/batch.sublime-build",
+					""
+				],
+				[
+					"Packages/User/platex.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/batch.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/perl.sublime-build",
+					""
+				],
+				[
+					"Packages/User/platex.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/perl.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 257.0,
+		"last_filter": "Evernote: ",
+		"selected_items":
+		[
+			[
+				"Evernote: ",
+				"Evernote: Send to Evernote as new note"
+			],
+			[
+				"listpa",
+				"Package Control: List Packages"
+			],
+			[
+				"remo pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pack lis",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remopa",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Repository"
+			],
+			[
+				"addre",
+				"Package Control: Add Repository"
+			],
+			[
+				"insta ",
+				"Package Control: Install Package"
+			],
+			[
+				"repo",
+				"Package Control: Remove Repository"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"save ",
+				"Project: Save As"
+			]
+		],
+		"width": 466.0
+	},
+	"console":
+	{
+		"height": 192.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Users/U1and0/Dropbox/Program/SublimeText3",
+		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Packages",
+		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Packages/User"
+	],
+	"file_history":
+	[
+		"/E/Users/U1and0/Dropbox/Document/qiita/cmder.md",
+		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Packages/User/EnhancedTXT.sublime-settings",
+		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Installed Packages/pckglst.txt",
+		"/E/Users/U1and0/Dropbox/Document/qiita/gnuplotでファイル名やディレクトリパスの取得.md",
+		"/E/Users/U1and0/Dropbox/Program/FireFox/adblockplus/abp151205.ini",
+		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Installed Packages/Theme - Tech49.sublime-package",
+		"/E/Users/U1and0/Dropbox/Program/Rainmeter/FX tactics.txt",
+		"/E/Users/U1and0/Dropbox/Program/perl/matdat.txt",
+		"/E/Users/U1and0/Dropbox/Program/perl/kudamono.pl",
+		"/E/Users/U1and0/Dropbox/Program/perl/maxhold_open.pl",
+		"/E/Users/U1and0/Dropbox/Program/perl/hello.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/20151112_131512.txt",
+		"/C/Users/悠一/Dropbox/Program/perl/filelist.txt",
+		"/C/Users/悠一/Dropbox/Program/perl/test.txt",
+		"/C/Users/悠一/Dropbox/Program/perl/run_perl.bat",
+		"/C/Users/悠一/Dropbox/Program/perl/uriage.txt",
+		"/C/Users/悠一/Dropbox/Program/perl/perl_memo.txt",
+		"/C/Users/悠一/Dropbox/Program/perl/read_split.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/helon.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/show_inlist.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/tanka.txt",
+		"/C/Users/悠一/Dropbox/Program/perl/kudamono.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/listmaker.pl",
+		"/C/Users/悠一/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/悠一/Dropbox/Program/gnunplot/list_calloop/list_calloop.plt",
+		"/C/Users/悠一/Dropbox/Program/perl/read.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/hello!!!.pl",
+		"/C/Users/悠一/Dropbox/Program/perl/hel.pl",
+		"/C/Users/悠一/Dropbox/Program/gnunplot/anm/20151112_130012.txt",
+		"/C/Users/悠一/Dropbox/Program/SublimeText3/Packages/User/EnhancedTXT.tmLanguage",
+		"/C/Users/悠一/Dropbox/Program/SublimeText3/Packages/User/EnhancedTXT.YAML-tmLanguage",
+		"/C/Users/悠一/Dropbox/Program/SublimeText3/Packages/User/perl.sublime-build",
+		"/C/Users/悠一/Dropbox/Program/MT4/MQL4/Indicators/User/EMA4.mq4",
+		"/C/Users/悠一/Dropbox/Program/MT4/MQL4/Indicators/User/MA_signal_test.mq4",
+		"/C/Users/悠一/Dropbox/Program/SublimeText3/Packages/MetaQuotes (MQL4) Compiler/mql4_compiler.py",
+		"/C/Users/悠一/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/Overload.txt",
+		"/C/Users/悠一/Dropbox/Program/MT4/MQL4/Indicators/User/ADXR110107.mq4",
+		"/C/Users/悠一/Dropbox/Program/MT4/MQL4/Indicators/User/trash/ADXR.mq4old",
+		"/C/Users/悠一/Dropbox/Program/MT4/MQL4/Experts/User/exADXR110107.mq4",
+		"/C/Users/悠一/Dropbox/Program/MT4/MQL4/EMA4.mq4",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/SUPERCOLOSSAL/WIDTH_1024white.ini",
+		"/C/Users/悠一/Dropbox/Program/iMacros/Macros/CookieClicker/RecordOnly_Cookie.iim",
+		"/C/Users/悠一/Dropbox/Program/iMacros/Macros/investment/zaimu.iim",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/FX tactics.txt",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/FX News.txt",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/@Resources/User/Options.inc",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Sidebar/Notes/Notes5/Notes5.ini",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Sidebar/Notes/Notes4/Notes2.ini",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Sidebar/Notes/Notes.ini",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Options/Options.ini",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/ToDo.txt",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/Doing.txt",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/ForexVolatility.txt",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Sidebar/Reader/Reader.ini",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Options/Feeds.inc",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/Enigma/Sidebar/Reader/Reader.inc",
+		"/C/Users/悠一/Dropbox/Program/MT4/profiles/default/chart01.chr",
+		"/C/Users/悠一/Dropbox/Document/会社/AutoCAD (AutoDESK)セミナー報告書.txt",
+		"/C/Users/悠一/AppData/Roaming/Sublime Text 3/Packages/Evernote/Evernote.sublime-settings",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/WantToDo.txt",
+		"/C/Users/悠一/Dropbox/Program/Emulator/snes9x-1.52-win32.fix4-1183/Saves/Final Fantasy V (Japan).oops",
+		"/C/Users/悠一/Downloads/(アプリ) マンガミーヤ MangaMeeya v7.4b/スクリプト説明.txt",
+		"/C/Users/悠一/Dropbox/Program/keyswap/keyswap/KeySwap.3",
+		"/C/Users/悠一/Dropbox/Program/Sublime Text 2.0.2/Data/Packages/Language - English/en_US.dic",
+		"/C/Users/悠一/Documents/iMacros/Macros/test2.bat",
+		"/C/Users/悠一/Documents/iMacros/Macros/test.txt",
+		"/C/Users/悠一/Documents/iMacros/Macros/Demo-Firefox/test.txt",
+		"/C/Users/悠一/Documents/WaveMetrics/Igor Pro 6 User Files/User Procedures/test.ipf",
+		"/C/Users/悠一/Documents/iMacros/Macros/@echo on.bat",
+		"/C/Windows/System32/WindowsPowerShell/v1.0/Examples/profile.ps1",
+		"/C/Users/悠一/AppData/Roaming/WaveMetrics/Igor Pro 6/Igor Preferences.ipr",
+		"/C/Users/悠一/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/LiveComm/5d7426f429122ca7/120712-0049/Att/20001101/databrowser_shtcut.ipf",
+		"/C/Users/悠一/AppData/Roaming/Rainmeter/Rainmeter.ini",
+		"/C/Users/悠一/Dropbox/Program/Rainmeter/Rainmeter.ini",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/SUPERCOLOSSAL/WIDTH_1024.ini",
+		"/C/Users/悠一/AppData/Roaming/かざぐるマウス/Kazaguru.ini",
+		"/C/Users/悠一/Documents/Rainmeter/Skins/SUPERCOLOSSAL/WIDTH_800.ini"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	",
+			"$",
+			"\\",
+			"\"\\t",
+			"name",
+			"height",
+			"weight",
+			"\\",
+			"s",
+			",",
+			"\n\n\n",
+			"\n\n",
+			";",
+			".",
+			"出力",
+			"\"",
+			"==",
+			"i",
+			"print",
+			"\";",
+			"ExtMapBuffer",
+			"2",
+			"ADX",
+			"1",
+			"ticket=",
+			"// ticket=",
+			"OrderClose",
+			"OrderSelect",
+			"OrderSend",
+			"SUB",
+			"corol",
+			"0)",
+			"0",
+			"[i]",
+			"ADXR_period",
+			"ADX_period",
+			"per",
+			"i",
+			"I",
+			"i",
+			"[i]",
+			"2",
+			"[]",
+			"EURUSD",
+			"。",
+			"NotesFile3",
+			"Feed",
+			"C:\\Program Files (x86)\\MetaTrader 4",
+			"U1and0",
+			"\"E",
+			"e",
+			"E",
+			"■",
+			"◆",
+			"。",
+			"[2015",
+			" ",
+			"f[i]-a",
+			"yy",
+			":",
+			"sg",
+			"F",
+			"	//",
+			"b",
+			"a",
+			"Editor",
+			"ConfigEditor",
+			"a",
+			"exe",
+			"notepad",
+			"000000"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/U1and0/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1033,
+								1033
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PackageDev/Syntax Definitions/Sublime Settings.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 215.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "EnhancedTXT.YAML-tmLanguage",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4978,
+								4978
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PackageDev/Syntax Definitions/Sublime Text Syntax Def (YAML).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2706.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 182.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mql4log":
+	{
+		"height": 182.0
+	},
+	"output.package_dev":
+	{
+		"height": 128.0
+	},
+	"output.preferences_editor_help":
+	{
+		"height": 182.0
+	},
+	"pinned_build_system": "",
+	"project": "STtools.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"enhan",
+				"Packages\\User\\EnhancedTXT.sublime-settings"
+			],
+			[
+				"hello",
+				"hello.pl"
+			],
+			[
+				"matda",
+				"matdat.txt"
+			],
+			[
+				"max",
+				"max.pl"
+			],
+			[
+				"show",
+				"show_inlist.pl"
+			],
+			[
+				"rea",
+				"read_split.pl"
+			],
+			[
+				"defaul",
+				"C:\\Users\\悠一\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Default (Windows).sublime-keymap"
+			],
+			[
+				"perl",
+				"User\\perl.sublime-build"
+			],
+			[
+				"",
+				"perl\\hel.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "cmder",
+		"selected_items":
+		[
+			[
+				"cmder",
+				"E:\\Users\\U1and0\\Dropbox\\Program\\Cmder\\cmder.sublime-project"
+			],
+			[
+				"st",
+				"E:\\Users\\U1and0\\Dropbox\\Program\\SublimeText3\\Packages\\User\\STtools.sublime-project"
+			],
+			[
+				"",
+				"E:\\Users\\U1and0\\Dropbox\\Program\\perl\\perl.sublime-project"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

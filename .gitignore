@@ -11,9 +11,11 @@
 FileHistory*.*
 Evernote.sublime-settings
 *.cache
+*cache*.*
 encoding_cache.json
-Package Control.*
+Package*Control.*
 !Package Control.sublime-settings
 FX_*.*
 Todo.md
 c2u_tmp
+*.last-run
