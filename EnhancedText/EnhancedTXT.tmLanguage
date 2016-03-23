@@ -150,7 +150,7 @@
 			<key>comment</key>
 			<string>行頭の1個以上の&gt;</string>
 			<key>match</key>
-			<string>^\&gt;+</string>
+			<string>(^\&gt;(\&gt;|\s)+|^\&gt;)</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
