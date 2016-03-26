@@ -7,8 +7,7 @@
 <USAGE>
 Package"Insert Date"と自作Snippet"line_under"が必要
 以下のようにキーボードショートカットを登録するといい
-	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
-*/
+	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },*/
 	// 最上段に移動
 	{
 		"args":
@@ -22,7 +21,7 @@ Package"Insert Date"と自作Snippet"line_under"が必要
 	{
 		"args":
 		{
-			"characters": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			"characters": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		},
 		"command": "insert"
 	},
@@ -62,7 +61,7 @@ Package"Insert Date"と自作Snippet"line_under"が必要
 	{
 		"args":
 		{
-			"characters": "__"
+			"characters": "__\n"
 		},
 		"command": "insert"
 	}

@@ -30,7 +30,7 @@
 			<key>comment</key>
 			<string>行頭の*か+か-(Markdownの項目)</string>
 			<key>match</key>
-			<string>(^|\s)(((\*|\+|\-)\s)|・)</string>
+			<string>(^|^\s+)(((\*|\+|\-)\s)|・)</string>
 			<key>name</key>
 			<string>keyword.control.import</string>
 		</dict>
