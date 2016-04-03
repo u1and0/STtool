@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>txt</string>
+		<string>md</string>
 	</array>
 	<key>name</key>
 	<string>Enhanced text</string>
@@ -24,7 +25,7 @@
 			<key>match</key>
 			<string>^\-{2}(\s|\-|.)*</string>
 			<key>name</key>
-			<string>entity.name.type</string>
+			<string>keyword.control.memory</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -36,27 +37,43 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>カッコ内の数字</string>
-			<key>match</key>
-			<string>\((\d|\.|\-)+\)</string>
-			<key>name</key>
-			<string>constant</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>行頭のカッコ内の英字1文字</string>
-			<key>match</key>
-			<string>(^|\s)\(\w\)</string>
-			<key>name</key>
-			<string>constant</string>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>行頭にある数字とドット(Markdownの数字項目)</string>
 			<key>match</key>
 			<string>(\s|^)\d+\.\s</string>
 			<key>name</key>
 			<string>constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>行頭の1個以上の&gt;</string>
+			<key>match</key>
+			<string>(^\&gt;(\&gt;|\s)+|^\&gt;)</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>カッコ内の数字・記号</string>
+			<key>match</key>
+			<string>\([\)_,\.\-\s\d]+\)</string>
+			<key>name</key>
+			<string>constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>カッコ内の数字・記号以外((?&lt;=[^\]])は下の「MarkdownのURL」との衝突回避)</string>
+			<key>match</key>
+			<string>(?&lt;=[^\]])\([\w\s^\)]+\)</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL)</string>
+			<key>match</key>
+			<string>(?&lt;=\])(\(.*\))</string>
+			<key>name</key>
+			<string>keyword</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -96,7 +113,7 @@
 			<key>match</key>
 			<string>\[+[^\]]+\]+</string>
 			<key>name</key>
-			<string>keyword.control.import</string>
+			<string>meta.tag</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -148,22 +165,6 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>行頭の1個以上の&gt;</string>
-			<key>match</key>
-			<string>(^\&gt;(\&gt;|\s)+|^\&gt;)</string>
-			<key>name</key>
-			<string>keyword</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL)</string>
-			<key>match</key>
-			<string>(?&lt;=\])(\(.*\))</string>
-			<key>name</key>
-			<string>keyword</string>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>行頭のhttp:かhttps:以下</string>
 			<key>match</key>
 			<string>(^|\s)http(:|s:)\S+</string>
@@ -172,17 +173,25 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>#一個以上と半角スペース以下(Markdownの見出し)</string>
+			<string>#行頭にある一個以上の#+半角スペース+任意の文字列以下(Markdownの見出し)</string>
 			<key>match</key>
-			<string>\#+\s.+</string>
+			<string>^\#+\s(\s|.)*</string>
 			<key>name</key>
-			<string>meta.tag</string>
+			<string>entity.name.type</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>@ 半角スペース 半角スペース以外の文字にマッチ、末尾がスペース2つ以上</string>
+			<string>#直前が行頭ではない一個以上の#+半角スペース+任意の文字列以下(Markdownの見出し)</string>
 			<key>match</key>
-			<string>(@|＠)\s.*\S(\s{3,})$</string>
+			<string>(?&lt;=[^^])\#+\s.*</string>
+			<key>name</key>
+			<string>source comment.block</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>@とスペース2つに挟まれたスペース以外の文字</string>
+			<key>match</key>
+			<string>@\S+\s{2}</string>
 			<key>name</key>
 			<string>constant.character.escaped</string>
 		</dict>
@@ -193,6 +202,14 @@
 			<string>//\s.*</string>
 			<key>name</key>
 			<string>comment</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>ブロックコメントアウト</string>
+			<key>match</key>
+			<string>(/\*\s[^(\*/)]*\*/|/\*\s([^(\*/)]|\s)*|.*\s\*/)</string>
+			<key>name</key>
+			<string>source comment.block</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

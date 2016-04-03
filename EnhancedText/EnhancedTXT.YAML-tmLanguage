@@ -1,21 +1,24 @@
 # ***************************************************
-# EnhancedText ver3.2.7
-#<<UPDATE3.2.7>>
-# リスト表示(・,+,*,-)の前が「文頭またはスペース後」から「文頭または文頭のスペース後」へ変更
-#<<UPDATE3.2.6>>
-# 引用句は'>'だけでなく、間に'スペース'を入れることも許可
-#<<UPDATE3.2.5>>
-# "<スペース>*文字*<スペース>(Markdownのイタリック体)"において、間に()が含まれると色変え無効になってしまう問題を解決
-#<<UPDATE3.2.4>>
-# "<スペース>**文字**<スペース>(Markdownの太字)"において、間に()が含まれると色変え無効になってしまう問題を解決
-# 任意の文字列1文字以上を意味する`.+`を入れることで回避
-#<<UPDATE3.2.3>>
-# 行頭の1個以上の>
-#<<UPDATE3.2.2>>
-# 直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL
-#<<UPDATE3.1.2>>
-# カッコ内がシャープ始まりでも色変え(markdonwのページないアンカー)
-# 斜線、太字のコメント変更
+# EnhancedText ver3.3.0
+# <INTRODUCTION>
+# 自分用シンタックスハイライト
+# markdownサポート
+# <ACTION>
+# YAML形式でハイライトを設定
+# <USAGE>
+# Built by PackageDev
+#<<UPDATE3.3.0>>
+# --以下色変更
+# []内色変更
+# @とスペース2つに囲まれた文字をハイライト(スペース1つまでならハイライト対象)に変更
+# #以下のハイライト
+#   行頭にある#1個以上+半角スペースは見出し
+#   行頭にない#1個以上+半角スペースはコメントアウト
+# ()内のハイライト
+#   文字列はコメントアウト
+#   数字は強調
+# <PLAN>
+# None
 # ***************************************************
 # [PackageDev] target_format: plist, ext: tmLanguage # rule
      # 下にある方が優先度高い
@@ -44,86 +47,94 @@
      #
 # -------------------------------------------------------------------------
      # color
-              #foreground pink / red---markup.deleted.git_gutter
-              #foreground red / white---invalid
+              #foreground pink / red  (markup.deleted.git_gutter)
+              #foreground red / white  (invalid)
 #-------------------------------------------------------------------------
-              #background skyblue / skyblue---meta.package
-              #background palepink / red---entity.name.type
-              #background palepink / pink---entity.name.function
-              #background purple / whiute---meta.diff.git-commit
-              #background light purple / white---punctuation.definition.unchanged.diff
-              #background mint green / white---markup.inserted
-              #background blue / white---meta.diff.header
-              #background green / yellow---markup.inserted.git_gutter
-              #background orange / orange---keyword.control.memory
+              #background skyblue / skyblue   (meta.package)
+              #background palepink / red   (entity.name.type)
+              #background palepink / pink   (entity.name.function)
+              #background purple / white   (meta.diff.git-commit)
+              #background light purple / white   (punctuation.definition.unchanged.diff)
+              #background mint green / white   (markup.inserted)
+              #background blue / white   (meta.diff.header)
+              #background green / yellow   (markup.inserted.git_gutter)
+              #background orange / orange   (keyword.control.memory)
 #-------------------------------------------------------------------------
               #()内はtheme-sankasan
-              #red---constant.character.escaped
-              #yellow(orrange)---markup.changed.git_gutter
-              #blue(orrange)---constant
-              #dark blue(dark orrange)---keyword.operator
-              #dark sky blue(brown)---support.type
-              #pale pink(brown)---punctuation.definition.string.begin
-              #yellow(green)---entity.name.tag
-              #yellow(green)---meta.tag
-              #green(moss green)---support.function
-              #purple---support.constant
-              #gray---source comment.block
-              #gray---comment
-              #red orange(green blue)---storage
-              #blue---variable.language
-              #blue---keyword.control.import
-              #purple---variable.other.constant/constant.numeric
-              #skyblue(light purple)---keyword
-              #pink ---entity.other.inherited-class
-              #dark pink---keyword.control
+              #red   (constant.character.escaped)
+              #yellow(orrange)   (markup.changed.git_gutter)
+              #blue(orrange)   (constant)
+              #dark blue(dark orrange)   (keyword.operator)
+              #dark sky blue(brown)   (support.type)
+              #pale pink(brown)   (punctuation.definition.string.begin)
+              #yellow(green)   (entity.name.tag)
+              #yellow(green)   (meta.tag)
+              #green(moss green)   (support.function)
+              #purple   (support.constant)
+              #gray   (source comment.block)
+              #gray   (comment)
+              #red orange(green blue)   (storage)
+              #blue   (variable.language)
+              #blue   (keyword.control.import)
+              #purple   (variable.other.constant/constant.numeric)
+              #skyblue(light purple)   (keyword)
+              #pink    (entity.other.inherited-class)
+              #dark pink   (keyword.control)
 #----------------------------------------------------------------------------
 { "name": "Enhanced text",
 "scopeName": "text.enhanced",
-"fileTypes": ["txt"],
+"fileTypes": ["txt","md"],
+
+
+
 "patterns": [
-# 動作確認済み
-
-
 # ライン
        {"match": "^\\_{2}(\\s|\\_|.)*",
        "name": "meta.package",
        "comment": "__以下"
        },
        {"match": "^\\-{2}(\\s|\\-|.)*",
-       "name": "entity.name.type",
+       "name": "keyword.control.memory",
        "comment": "--以下(Markdownのライン)"
        },
 
 
-# 項目
+# 行頭にある文字列
        # {"match": "^\\$(\\d|\\-|\\.)+",
-       # "name": "keyword.control",
+       # "name": "keyword.c  zontrol",
        # # "name": "keyword.control",
        # # "name": "constant.character.escaped",
        # "comment": "=と数字、ドット、ハイフン"
        # },
        {"match": "(^|^\\s+)(((\\*|\\+|\\-)\\s)|・)",
-       # {"match": "(^|\\s)((\\+|\\-|\\=|\\-\\>|\\<\\-)\\s|・)",
        "name": "keyword.control.import",
        "comment": "行頭の*か+か-(Markdownの項目)"
-       },
-       {"match": "\\((\\d|\\.|\\-)+\\)",
-       "name": "constant",
-       "comment": "カッコ内の数字"
-       },
-       {"match": "(^|\\s)\\(\\w\\)",
-       "name": "constant",
-       "comment": "行頭のカッコ内の英字1文字"
        },
        {"match": "(\\s|^)\\d+\\.\\s",
        "name": "constant",
        "comment": "行頭にある数字とドット(Markdownの数字項目)"
        },
+       {"match": "(^\\>(\\>|\\s)+|^\\>)",
+      # {"match": "^\\>+",
+       "name": "keyword",
+       "comment": "行頭の1個以上の>"
+       },
 
 
 
-# カッコ内
+# 記号内の文字列
+       {"match": "\\([\\)_,\\.\\-\\s\\d]+\\)",
+       "name": "constant",
+       "comment": "カッコ内の数字・記号"
+       },
+       {"match": "(?<=[^\\]])\\([\\w\\s^\\)]+\\)",
+       "name": "comment",
+       "comment": "カッコ内の数字・記号以外((?<=[^\\]])は下の「MarkdownのURL」との衝突回避)"
+       },
+       {"match": "(?<=\\])(\\(.*\\))",
+       "name": "keyword",
+       "comment": "直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL)"
+       },
        {"match": "\\<+[^\\>]+\\>+",
        "name": "support.function",
        "comment": "<>内"
@@ -145,7 +156,7 @@
        # "comment": "{}内の文字"
        # },
        {"match": "\\[+[^\\]]+\\]+",
-       "name": "keyword.control.import",
+       "name": "meta.tag",
        "comment": "[]内"
        },
        {"match": "\"[^\"]*\"",
@@ -175,35 +186,41 @@
        },
 
 
-# 特定の文字列以下の強調
-      {"match": "(^\\>(\\>|\\s)+|^\\>)",
-      # {"match": "^\\>+",
-       "name": "keyword",
-       "comment": "行頭の1個以上の>"
-       },
+
+
+
+
+# 記号・文字列以下
        # {"match": "\\((#|(http(:|s:)))\\S.+\\)",
        # {"match": "[^^]\\(+[^\\)]+\\)",
        # "comment": "()[]内のhttp:かhttps:以下(Markdownのurl)"
        # "comment": "行頭ではない()内の文字列(MarkdownのURL)"
-       {"match": "(?<=\\])(\\(.*\\))",
-       "name": "keyword",
-       "comment": "直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL)"
-       },
+
        {"match": "(^|\\s)http(:|s:)\\S+",
        "name": "keyword",
        "comment": "行頭のhttp:かhttps:以下"
        },
-      {"match": "\\#+\\s.+",
-       "name": "meta.tag",
-       "comment": "#一個以上と半角スペース以下(Markdownの見出し)"
+      {"match": "^\\#+\\s(\\s|.)*",
+       "name": "entity.name.type",
+       "comment": "#行頭にある一個以上の#+半角スペース+任意の文字列以下(Markdownの見出し)"
        },
-      {"match": "(@|＠)\\s.*\\S(\\s{3,})$",
+      {"match": "(?<=[^^])\\#+\\s.*",
+       "name": "source comment.block",
+       "comment": "#直前が行頭ではない一個以上の#+半角スペース+任意の文字列以下(Markdownの見出し)"
+       },
+      {"match": "@\\S+\\s{2}",
+      # {"match": "(@|＠)\\s.*\\S(\\s{3,})$",
        "name": "constant.character.escaped",
-       "comment": "@ 半角スペース 半角スペース以外の文字にマッチ、末尾がスペース2つ以上"
+       "comment": "@とスペース2つに挟まれたスペース以外の文字"
+       # "comment": "@ 半角スペース 半角スペース以外の文字にマッチ、末尾がスペース2つ以上"
        },
        {"match": "//\\s.*",
        "name": "comment",
        "comment": "コメントアウト"
+       },
+       {"match": "(/\\*\\s[^(\\*/)]*\\*/|/\\*\\s([^(\\*/)]|\\s)*|.*\\s\\*/)",
+       "name": "source comment.block",
+       "comment": "ブロックコメントアウト"
        },
        # ____________________________________________________
        # ----------------example------------------

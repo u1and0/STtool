@@ -22,7 +22,7 @@
 	],
 	"find_selected_text": true,
 	"font_face": "Meiryo",
-	"font_size": 9,
+	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":

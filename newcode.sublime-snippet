@@ -1,9 +1,19 @@
 <snippet>
 	<content><![CDATA[
----------${1:this}----------
+${1:--filename--} ver${2:--version--}
+<INTRODUCTION>
+${3:--introduction--}
+<ACTION>
+${4:--action--}
+<USAGE>
+${5:--usage--}
+<UPDATE${2:--version--}>
+${6:--update--}
+<PLAN>
+${7:--plan--}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>-</tabTrigger>
+	<tabTrigger>new</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

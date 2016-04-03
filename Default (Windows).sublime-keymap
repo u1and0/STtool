@@ -1,5 +1,7 @@
 [
-// sublime-keymap ver7.2.5
+// sublime-keymap ver7.2.6
+// <UPDATE7.2.6>
+// show_panel build result
 // <UPDATE7.2.5>
 // + Quick Change Project as ["ctrl+alt+p"]
 // <UPDATE7.2.4>
@@ -18,8 +20,7 @@
 	{ "keys": ["ctrl+k","ctrl+c"], "command": "close_workspace" },
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 	// { "keys": [ "ctrl+alt+b" ], "command": "preview_in_browser"},
-
-
+	{"keys": ["ctrl+alt+`"], "command": "show_panel", "args": {"panel": "output.exec"}},
 // -----------------------------------Change from Default------------------------------------
 	{ "keys": ["ctrl+alt+pageup"], "command": "show_at_center" },
 	{ "keys": ["ctrl+alt+pagedown"], "command": "show_at_center" },

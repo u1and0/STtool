@@ -33,25 +33,25 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 * Default (Windows).sublime-keymap
 
 
-	UPDATE7.2.3
+##### UPDATE7.2.3
 	+ {ctrl+e,ctrl+o}Evernote:List Recent Notes
 	+ {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note
 
 
 
-	UPDATE7.2.2
+##### UPDATE7.2.2
 	+ {shift+enter}insert_2spaceNewline.sublime-macro
 		shift + enterで行末にスペース二つ入れてから改行  
 		行間のどの位置から実行しても良い  
 
 
 
-	UPDATE7.2.1
+##### UPDATE7.2.1
 	+ Auto-pair Back Quotesはスペースを保管しないように変更
 
 
 
-	UPDATE7.2
+##### UPDATE7.2
 	+ Auto pair \*
 		select内を*でくくる
 		他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
@@ -62,13 +62,13 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 
 
 
-	UPDATE7.1
+##### UPDATE7.1
 	- Auto-pair percent %の自動補完  
 	- "ctrl+p","ctrl+w" ワークスペースの保存  
 	- "ctrl+e","ctrl+f" evernote search_note  
 
 * Default (Windows).sublime-mousemap  
-	UPDATE3.1
+##### UPDATE3.1
 	+ expand selection to scope
 	+ PageScroll
 	+ soft undo & soft redo
@@ -83,7 +83,7 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 
 * Default (Windows).sublime-mousemap  
 
-	UPDATE3.1
+##### UPDATE3.1
 	+ expand selection to scope
 	+ PageScroll
 	+ soft undo & soft redo
@@ -191,21 +191,163 @@ keymapで`ctrl+alt+/`で起動するように設定している
 -----------------------------------------------------------------------
 ## Enhanced text
 自分用シンタックス。.txtや.md形式のファイルをより見やすくするために作った
-* EnhancedTXT.sublime-settings
-* EnhancedTXT.tmLanguage
-* EnhancedTXT.YAML-tmLanguage
 
-UPDATE3.1.2
++ EnhancedTXT.sublime-settings
++ EnhancedTXT.tmLanguage
++ EnhancedTXT.YAML-tmLanguage
+
+
+
+##### UPDATE3.3.0
+
+変更リスト
+
++ --以下色変更
++ []内色変更
++ @とスペース2つに囲まれた文字をハイライト(スペース1つまでならハイライト対象)に変更
++ \#以下のハイライト
+	- 行頭にある#1個以上+半角スペースは見出し
+	- 行頭にない#1個以上+半角スペースはコメントアウト
++ ()内のハイライト
+	- 文字列はコメントアウト
+	- 数字は強調
+
+
+###### @とスペース２つ以上で囲まれた文字列
+`"match": "@\\S+\\s{2}"`
+<ハイライトして欲しい>
+(@のあとにスペース2つ)
+@ja  
+(@のあとにスペース1つ行末)
+@ja 
+@ja あ
+(@のあとにスペースなし)
+@ja
+(スペース2つで区切られていれば、その後の文字列はハイライト無効)
+@textenhanced  zgg @loman  
+(間にスペースがひとつでも入るとハイライト無効)
+@text enhanced  zgg @loman  
+@text enhanced  zgg @loman ad
+@text enhanced  
+@text  enhanced@ccom
+<(一部または全部)ハイライトして欲しくない>
+(間にスペースが入った場合)
+@text enhanced   @loman ad  
+(メールアドレス)
+mailaddress@gmail.com
+(スペースひとつでハイライト無効)
+mailaddress@gmail.com jhf
+(スペース二つはいるとハイライト有効)
+mailaddress@gmail.com  jhf
+(末尾にスペースが2つない)
+EnhancedText @趣味 aa@ja
+(文頭@文末スペース２つでも、間に挟まれた文字列が@とスペースにはさまれていなければハイライト無効)
+@家  zz @金銭 z  @aasdfg  
+
+
+
+
+###### ()内
+`"match": "\\([\\)_,\\.\\-\\s\\d]+\\)"`
+`"match": "(?<=[^\\]])\\([\\w\\s^\\)]+\\)"`
+数字・記号が1つでも入るとコメント
+文字列はコメント
+__TEST__
+http:asdf    #httpは
+https:asjkf
+(https:asjkf)
+](https:asjkf)
+(hoge)   スペースが一個でも入るとコメントアウト
+(hoge)スペース含まれなければ通常(リンクとかぶる)
+(1)    数字、記号は強調
+(1.4746 12343 42  3 4523, 534)    数字、記号は強調(123)後ろにまたカッ(a)コが来ても区別してくれる[](hadfttps)
+(1_47-4 6)    数字、記号、スペースは強調
+(1-47a-46)    数字、記号以外が入るとはコメント
+(comment out)    文字列はコメントアウト
+________________________
+
+
+###### []内の文字
+`"match": "\\[+[^\\]]+\\]+"`
+色変更
+
+
+###### #以下の文字
+`"match": "\\#+\\s(\\s|.)*"`
+
+**#が行頭にあった場合**
+
+- 強調
+- 色変更
+- entity.name.typeにすることでctrl+rから検索できる
+
+
+
+
+
+**#が行頭にない場合**
+
+- コメントアウト
+- //と使い分けるためにブロックコメント色を使用
+
+
+__TEST__
+normal#normal
+normal      # comenntout
+normal		# comenntout
+#normal# commentout
+normal# comment out
+	# comment out
+	normal# commentout
+# heading# heading
+# heading # heading
+# heading
+____________________________
+
+###### /**/に囲まれた文字列(擬似ブロックコメントアウト)
+**"match": "(/\\*\\s[^(\\*/)]*\\*/|/\\*\\s([^(\\*/)]|\\s)*|.*\\s\\*/)",**
+改行がわからないから行頭まで行末までを有効
+"/*半角スペース<文字列>*/"の間
+"/*半角スペース"の後ろ
+"半角スペース*/"の前
+
+__TEST__
+/*normal*/
+/*normal
+normal*/
+/*comment */normal
+/* comment */normal
+/* comment */ normal/* comment*/normal
+
+/* comment
+comment */
+comment */
+
+normal/* comment
+
+normal/* comment           comment            */
+	normal
+	normal */normal
+
+comment */normal
+				comment */normal
+normal*/normal
+____________________________
+
+
+
+
+##### UPDATE3.1.2
 + カッコ内がシャープ始まりでも色変え(markdonwのページないアンカー)
 + 斜線、太字のコメント変更
 
 
-UPDATE3.1.1
+##### UPDATE3.1.1
 + 斜線、太字の不具合を修正
 	+ 米マークが先頭に来ていても色が変わるように修正
 	+ 同じ行に斜線、太字マークが複数あっても色が変わる
 
-UPDATE3.1
+##### UPDATE3.1
 + <>の色を緑に変更
 	- 元々緑だった@は紫に変更
 + 項目番号の表示修正
@@ -216,7 +358,7 @@ UPDATE3.1
 
 
 
-UPDATE3.0
+##### UPDATE3.0
 + MarkDown記法への対応  
 	- [ライン]ハイフン2個以上並んだとき、以下を色変え  
 	- [項目]+,-,*とスペース  
