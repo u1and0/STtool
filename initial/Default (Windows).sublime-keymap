@@ -3,16 +3,16 @@
 # UPDATE1.1
 initial sharp ctrl+shift+3 >>> ctrl+alt+3 
 
-"ctrl+/"¤Çsyntax¤ËŒê¤·¤¿¥³¥á¥ó¥È¥¢¥¦¥È(.bat, .vbs, ,mq4¤Ê¤É)
-"ctrl+shift+3"¤ÇÏÈî^¤Ë¥·¥ã©`¥×(text.enhanced¥·¥ó¥¿¥Ã¥¯¥¹¤Î¤È¤­)
-"ctrl+alt+/"¤ÇÏÈî^¤Ë+¤È¤«*¤È¤«¤¤¤í¤¤¤í
+"ctrl+/"ã§syntaxã«å¯¾å¿œã—ãŸã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ(.bat, .vbs, ,mq4ãªã©)
+"ctrl+shift+3"ã§å…ˆé ­ã«ã‚·ãƒ£ãƒ¼ãƒ—(text.enhancedã‚·ãƒ³ã‚¿ãƒƒã‚¯ã‚¹ã®ã¨ã)
+"ctrl+alt+/"ã§å…ˆé ­ã«+ã¨ã‹*ã¨ã‹ã„ã‚ã„ã‚
 <<update ver1.0>>
-¥¹¥Ë¥Ú¥Ã¥È¿¤initial¥·¥ê©`¥º "at, Wslash, dat"¤ÎŸo„¿»¯
-tab¥È¥ê¥¬©`¤òŸo„¿¤Ë¤·¤¿¤À¤±¤Ç²Ğ¤Ã¤Æ¤Ï¤¤¤ë¡£*/
+ã‚¹ãƒ‹ãƒšãƒƒãƒˆéƒ¡initialã‚·ãƒªãƒ¼ã‚º "at, Wslash, dat"ã®ç„¡åŠ¹åŒ–
+tabãƒˆãƒªã‚¬ãƒ¼ã‚’ç„¡åŠ¹ã«ã—ãŸã ã‘ã§æ®‹ã£ã¦ã¯ã„ã‚‹ã€‚*/
 [
 	// comment out
 	{"keys": ["ctrl+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/comment_out.sublime-macro"}, "context":
-		[//"text.enhanced"¤Î¥¹¥³©`¥×ÄÚ¤Ç¤Î¤ß„Ó×÷¿ÉÄÜ¤Ë¤¹¤ë
+		[//"text.enhanced"ã®ã‚¹ã‚³ãƒ¼ãƒ—å†…ã§ã®ã¿å‹•ä½œå¯èƒ½ã«ã™ã‚‹
 			{"key": "selector", "operator": "equal", "operand": "text.enhanced"},
 			{"key": "selector", "operator": "equal", "operand": "meta.block.mql4"},
 			{"key": "selector", "operator": "equal", "operand": "meta.function.mql4"},
@@ -20,12 +20,12 @@ tab¥È¥ê¥¬©`¤òŸo„¿¤Ë¤·¤¿¤À¤±¤Ç²Ğ¤Ã¤Æ¤Ï¤¤¤ë¡£*/
 		]
 	},
 	{"keys": ["ctrl+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/comment_out_vbnet.sublime-macro"}, "context":
-		[//"source.vbnet"¤Î¥¹¥³©`¥×ÄÚ¤Ç¤Î¤ß„Ó×÷¿ÉÄÜ¤Ë¤¹¤ë
+		[//"source.vbnet"ã®ã‚¹ã‚³ãƒ¼ãƒ—å†…ã§ã®ã¿å‹•ä½œå¯èƒ½ã«ã™ã‚‹
 			{"key": "selector", "operator": "equal", "operand": "source.vbnet"},
 		]
 	},
 	{"keys": ["ctrl+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/comment_out_bat.sublime-macro"}, "context":
-		[//ÌØ¶¨¤Î¥¹¥³©`¥×ÄÚ¤Ç¤Î¤ß„Ó×÷¿ÉÄÜ¤Ë¤¹¤ë
+		[//ç‰¹å®šã®ã‚¹ã‚³ãƒ¼ãƒ—å†…ã§ã®ã¿å‹•ä½œå¯èƒ½ã«ã™ã‚‹
 			{"key": "selector", "operator": "equal", "operand": "source.dosbatch"}
 		]
 	},
