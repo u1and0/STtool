@@ -49,30 +49,30 @@ Close work space as ["ctrl+k","ctrl+c"]
 
 
 ##### UPDATE7.2.3
-	+ {ctrl+e,ctrl+o}Evernote:List Recent Notes
-	+ {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note
+{ctrl+e,ctrl+o}Evernote:List Recent Notes  
+{ctrl+shift+e,ctrl+shift+o}Evernote:Open Note  
 
 
 
 ##### UPDATE7.2.2
-	+ {shift+enter}insert_2spaceNewline.sublime-macro
-		shift + enterで行末にスペース二つ入れてから改行  
-		行間のどの位置から実行しても良い  
+{shift+enter}insert_2spaceNewline.sublime-macro  
+	shift + enterで行末にスペース二つ入れてから改行  
+	行間のどの位置から実行しても良い  
 
 
 
 ##### UPDATE7.2.1
-	+ Auto-pair Back Quotesはスペースを保管しないように変更
+Auto-pair Back Quotesはスペースを保管しないように変更  
 
 
 
 ##### UPDATE7.2
-	+ Auto pair \*
-		select内を*でくくる
-		他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)
-	+ Auto pair ~
-		打消し線~~が打たれる
-	+ Auto pair  \`  
+Auto pair \*  
+select内を*でくくる  
+他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)  
+Auto pair ~  
+打消し線~~が打たれる  
+Auto pair  \`    
 
 
 
@@ -84,13 +84,13 @@ Close work space as ["ctrl+k","ctrl+c"]
 
 * Default (Windows).sublime-mousemap  
 ##### UPDATE3.1
-	+ expand selection to scope
-	+ PageScroll
-	+ soft undo & soft redo
-	+ jump
-	+ undo & redo
-	+ Change tabs
-	+ Select scope~~+ Select all~~
+	* expand selection to scope
+	* PageScroll
+	* soft undo & soft redo
+	* jump
+	* undo & redo
+	* Change tabs
+	* Select scope~~+ Select all~~
 
 * Default (Windows).sublime-mousemap.txt  
 	sublimetext2から拾ってきたマウスマップのデフォルト  
