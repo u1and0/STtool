@@ -33,40 +33,40 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 * Default (Windows).sublime-keymap
 
 
-##### UPDATE7.2.7
+### UPDATE7.2.7
 markdown_preview in browser as ["alt+b"]
 
-##### UPDATE7.2.6
+### UPDATE7.2.6
 show_panel build result as ["ctrl+shift+@"]
 
-##### UPDATE7.2.5
+### UPDATE7.2.5
 Quick Change Project as ["ctrl+alt+p"]
 
-##### UPDATE7.2.4
+### UPDATE7.2.4
 Remove "save_project_as" and "save_workspace_as"
 Close work space as ["ctrl+k","ctrl+c"]
 
 
 
-##### UPDATE7.2.3
+### UPDATE7.2.3
 {ctrl+e,ctrl+o}Evernote:List Recent Notes  
 {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note  
 
 
 
-##### UPDATE7.2.2
+### UPDATE7.2.2
 {shift+enter}insert_2spaceNewline.sublime-macro  
 	shift + enterで行末にスペース二つ入れてから改行  
 	行間のどの位置から実行しても良い  
 
 
 
-##### UPDATE7.2.1
+### UPDATE7.2.1
 Auto-pair Back Quotesはスペースを保管しないように変更  
 
 
 
-##### UPDATE7.2
+### UPDATE7.2
 Auto pair \*  
 select内を*でくくる  
 他のAuto pairと異なり、何もない行に*を打ち込んだときは通常通り*が打たれる(項目として使われる*, 計算式として使われる*が必要だから)  
@@ -77,13 +77,13 @@ Auto pair  \`
 
 
 
-##### UPDATE7.1
-	- Auto-pair percent %の自動補完  
-	- "ctrl+p","ctrl+w" ワークスペースの保存  
-	- "ctrl+e","ctrl+f" evernote search_note  
+### UPDATE7.1
+Auto-pair percent %の自動補完  
+"ctrl+p","ctrl+w" ワークスペースの保存  
+"ctrl+e","ctrl+f" evernote search_note  
 
 * Default (Windows).sublime-mousemap  
-##### UPDATE3.1
+### UPDATE3.1
 	* expand selection to scope
 	* PageScroll
 	* soft undo & soft redo
@@ -96,19 +96,27 @@ Auto pair  \`
 	sublimetext2から拾ってきたマウスマップのデフォルト  
 	参考用なので拡張子が.txt  
 
-* Default (Windows).sublime-mousemap  
+	
+	
 
-##### UPDATE3.1
-	+ expand selection to scope
-	+ PageScroll
-	+ soft undo & soft redo
-	+ jump
-	+ undo & redo
-	+ Change tabs
-	+ Selct all
 
-* Default (Windows).sublime-mousemap.txt  
-	sublimetext2から拾ってきたデフォルト
+
+
+
+
+## Default (Windows).sublime-mousemap  
+
+### UPDATE3.1
+
++ expand selection to scope
++ PageScroll
++ soft undo & soft redo
++ jump
++ undo & redo
++ Change tabs
++ Selct all
++ Default (Windows).sublime-mousemap.txt  
+sublimetext2から拾ってきたデフォルト
 
 
 
