@@ -1,14 +1,19 @@
 <snippet>
 <content><![CDATA[
 ## ${1:--filename--} ver${2:--version--}
+
 __UPDATE${2:--version--}__
 ${3:--update--}
+
 __INTRODUCTION__
 ${4:--introduction--}
+
 __USAGE__
 ${5:--usage--}
+
 __ACTION__
 ${6:--action--}
+
 __PLAN__
 ${7:--plan--}
 ]]></content>
