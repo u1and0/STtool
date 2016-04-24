@@ -1,7 +1,10 @@
 [
-/*sublime-keymap ver7.2.6
+/*sublime-keymap ver7.2.7
+# UPDATE7.2.7
+markdown_preview in browser as ["alt+b"]
+
 # UPDATE7.2.6
-show_panel build result as [ctrl+shift+@]
+show_panel build result as ["ctrl+shift+@"]
 
 # UPDATE7.2.5
 Quick Change Project as ["ctrl+alt+p"]
@@ -15,13 +18,13 @@ Close work space as ["ctrl+k","ctrl+c"]
 
 
 // -----------------------------------User definition------------------------------------
+	{ "keys": ["alt+b"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
 	{ "keys": ["ctrl+shift+@"], "command": "show_panel", "args": {"panel": "output.exec"}},
 	{ "keys": ["ctrl+alt+t"], "command": "clone_file"},
 	{ "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 20.0 } },
 	{ "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -20.0 } },
 	{ "keys": ["ctrl+k","ctrl+c"], "command": "close_workspace" },
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
-	// { "keys": [ "ctrl+alt+b" ], "command": "preview_in_browser"},
 	{"keys": ["ctrl+alt+`"], "command": "show_panel", "args": {"panel": "output.exec"}},
 // -----------------------------------Change from Default------------------------------------
 	{ "keys": ["ctrl+alt+pageup"], "command": "show_at_center" },
