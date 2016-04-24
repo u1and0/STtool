@@ -33,6 +33,21 @@ Sublimetext3 で使用しているuser settingやらmacroやらsnippet.
 * Default (Windows).sublime-keymap
 
 
+##### UPDATE7.2.7
+markdown_preview in browser as ["alt+b"]
+
+##### UPDATE7.2.6
+show_panel build result as ["ctrl+shift+@"]
+
+##### UPDATE7.2.5
+Quick Change Project as ["ctrl+alt+p"]
+
+##### UPDATE7.2.4
+Remove "save_project_as" and "save_workspace_as"
+Close work space as ["ctrl+k","ctrl+c"]
+
+
+
 ##### UPDATE7.2.3
 	+ {ctrl+e,ctrl+o}Evernote:List Recent Notes
 	+ {ctrl+shift+e,ctrl+shift+o}Evernote:Open Note
