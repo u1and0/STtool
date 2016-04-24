@@ -1,12 +1,14 @@
-// ___________________________________________________
-// initial keymap ver1.0
-// "ctrl+/"でsyntaxに対応したコメントアウト(.bat, .vbs, ,mq4など)
-// "ctrl+shift+3"で先頭にシャープ(text.enhancedシンタックスのとき)
-// "ctrl+alt+/"で先頭に+とか*とかいろいろ
-// <<update ver1.0>>
-//  スニペット郡initialシリーズ "at, Wslash, dat"の無効化
-//  tabトリガーを無効にしただけで残ってはいる。
-// ___________________________________________________
+/*initial keymap ver1.1
+
+# UPDATE1.1
+initial sharp ctrl+shift+3 >>> ctrl+alt+3 
+
+"ctrl+/"でsyntaxに対応したコメントアウト(.bat, .vbs, ,mq4など)
+"ctrl+shift+3"で先頭にシャープ(text.enhancedシンタックスのとき)
+"ctrl+alt+/"で先頭に+とか*とかいろいろ
+<<update ver1.0>>
+スニペット郡initialシリーズ "at, Wslash, dat"の無効化
+tabトリガーを無効にしただけで残ってはいる。*/
 [
 	// comment out
 	{"keys": ["ctrl+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/comment_out.sublime-macro"}, "context":
@@ -28,7 +30,7 @@
 		]
 	},
 	//initial sharp
-	{"keys": ["ctrl+shift+3"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/initial_sharp.sublime-macro"},"context":
+	{"keys": ["ctrl+alt+3"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/initial_sharp.sublime-macro"},"context":
 		[
 			{"key": "selector", "operator": "equal", "operand": "text.enhanced"}
 		]
