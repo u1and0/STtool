@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"inc"
+		"inc",
+		"speeddial"
 	]
 }
