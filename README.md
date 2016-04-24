@@ -96,8 +96,8 @@ Auto-pair percent %の自動補完
 	sublimetext2から拾ってきたマウスマップのデフォルト  
 	参考用なので拡張子が.txt  
 
-	
-	
+
+
 
 
 
@@ -124,7 +124,8 @@ sublimetext2から拾ってきたデフォルト
 
 -----------------------------------------------------------------------
 ## Theme
-+ [Tubnil_kai.tmTheme](https://github.com/austinwagner/sublime-sourcepawn/blob/master/Tubnil.sublime-theme)
++ [Tubnil_kai.tmTheme](https://github.com/austinwagner/sublime-sourcepawn/blob/master/Tubnil.sublime-theme)  
+色を若干変更した。
 
 
 
