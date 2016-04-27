@@ -71,7 +71,7 @@
 			"file": "/C/Users/U1and0/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 			"settings":
 			{
-				"buffer_size": 14314,
+				"buffer_size": 14223,
 				"line_ending": "Unix"
 			}
 		}
@@ -322,6 +322,9 @@
 	],
 	"file_history":
 	[
+		"/E/Users/U1and0/Dropbox/Program/Cmder/config/aliases",
+		"/E/Users/U1and0/Dropbox/Program/Cmder/vendor/Scripts/spyder-script.py",
+		"/C/Anaconda3/Scripts/spyder-script.py",
 		"/E/Users/U1and0/Dropbox/Program/FireFox/speeddial/20160314.speeddial",
 		"/E/Users/U1and0/Dropbox/Program/FireFox/speeddial/dial160424.speeddial",
 		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Packages/User/Default (Windows).sublime-keymap",
@@ -330,7 +333,6 @@
 		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Packages/User/Default (Windows).html",
 		"/C/Users/U1and0/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/E/Users/U1and0/Dropbox/Program/SublimeText3/Packages/User/initial/Default (Windows).sublime-keymap",
-		"/E/Users/U1and0/Dropbox/Program/Cmder/config/aliases",
 		"/E/Users/U1and0/Dropbox/Program/Cmder/vendor/conemu-maximus5/ConEmu.xml",
 		"/E/Users/U1and0/Dropbox/Program/Rainmeter/FX tactics.txt",
 		"/C/Users/U1and0/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -447,9 +449,7 @@
 		"/C/Users/悠一/Documents/iMacros/Macros/@echo on.bat",
 		"/C/Windows/System32/WindowsPowerShell/v1.0/Examples/profile.ps1",
 		"/C/Users/悠一/AppData/Roaming/WaveMetrics/Igor Pro 6/Igor Preferences.ipr",
-		"/C/Users/悠一/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/LiveComm/5d7426f429122ca7/120712-0049/Att/20001101/databrowser_shtcut.ipf",
-		"/C/Users/悠一/AppData/Roaming/Rainmeter/Rainmeter.ini",
-		"/C/Users/悠一/Dropbox/Program/Rainmeter/Rainmeter.ini"
+		"/C/Users/悠一/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/LiveComm/5d7426f429122ca7/120712-0049/Att/20001101/databrowser_shtcut.ipf"
 	],
 	"find":
 	{
@@ -468,6 +468,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\",
 			"-dynamictitle",
 			"-backgroundcolor",
 			"thumbnail-1",
@@ -594,8 +595,7 @@
 			"match",
 			"\"characters\": \"__",
 			"\"_\"",
-			"/17",
-			"16"
+			"/17"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -805,15 +805,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14314,
+						"buffer_size": 14223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3226,
-								3226
+								0,
+								0
 							]
 						],
 						"settings":
@@ -821,31 +821,51 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -855,27 +875,7 @@
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_regex_content"
 							],
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/PackageDev/Syntax Definitions/Sublime Key Map.tmLanguage",
@@ -1097,6 +1097,10 @@
 				"E:\\Users\\U1and0\\Dropbox\\Program\\python\\python.sublime-project"
 			],
 			[
+				"python",
+				"E:\\Users\\U1and0\\Dropbox\\Program\\python\\python.sublime-project"
+			],
+			[
 				"p",
 				"E:\\Users\\U1and0\\Dropbox\\Program\\python\\python.sublime-project"
 			],
@@ -1179,7 +1183,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 209.0,
 	"status_bar_visible": true,
 	"template_settings":
