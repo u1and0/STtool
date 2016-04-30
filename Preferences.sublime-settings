@@ -1,6 +1,6 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/User/Tubnil_kai.tmTheme",
+	"color_scheme": "Packages/User/EnhancedText/Tubnil_kai.tmTheme",
 	"detect_slow_plugins": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -45,7 +45,7 @@
 	"show_encoding": true,
 	"show_panel_on_build": true,
 	"sidebar_folders": false,
-	"tab_size": 4,
+	"tab_size": 2,
 	"theme": "Nexus.sublime-theme",
 	"translate_spaces_to_tabs": false,
 	"word_separators": "./\\()\"'-:,.~!@#$%^&;*|+=[]<>{}`~?_　。、「」！？【】『』＜＞～・",
