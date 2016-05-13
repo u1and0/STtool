@@ -105,7 +105,7 @@ Color Scheme-Tubnil_kai << customed Tubnil (Sankasan)
        "name": "meta.package",
        "comment": "行頭の<アンダースコア2個以上>以下(Markdownの太字)"
        },
-       {"match": "^(\\-|=){2}(\\s|\\-|=|)*",
+       {"match": "^(\\-|=){2}(\\s|\\-|=|.)*",
        "name": "keyword.control.memory",
        "comment": "行頭2文字以上の<ハイフン>または<イコール>以下(Markdownのライン)"
        },

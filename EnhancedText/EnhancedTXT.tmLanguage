@@ -36,7 +36,7 @@ color ------------------------------------------------------------------------- 
 			<key>comment</key>
 			<string>行頭2文字以上の&lt;ハイフン&gt;または&lt;イコール&gt;以下(Markdownのライン)</string>
 			<key>match</key>
-			<string>^(\-|=){2}(\s|\-|=|)*</string>
+			<string>^(\-|=){2}(\s|\-|=|.)*</string>
 			<key>name</key>
 			<string>keyword.control.memory</string>
 		</dict>

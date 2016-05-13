@@ -14,7 +14,7 @@ ${5:--introduction--}
 __ACTION__
 ${6:--action--}
 
-__PLAN__
+__TODO__
 ${7:None}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
