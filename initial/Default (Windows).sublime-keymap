@@ -1,14 +1,36 @@
-/*initial keymap ver1.1
+/*
+## [Default (Windows).sunlime-keymap](initial keymap) ver1.2
 
-# UPDATE1.1
+__UPDATE1.2__
+* initial_star(markdownの"項目")をinitial_markから独立したマクロにした
+* ショートカットキーは"alt+/"
+* インデントをずらさない
+>コメントアウトとは異なりmove bolを1回だけしか行わないため
+* initial_markもインデントをずらさない挙動にした
+
+__UPDATE1.1__
 initial sharp ctrl+shift+3 >>> ctrl+alt+3 
-
 "ctrl+/"でsyntaxに対応したコメントアウト(.bat, .vbs, ,mq4など)
 "ctrl+shift+3"で先頭にシャープ(text.enhancedシンタックスのとき)
 "ctrl+alt+/"で先頭に+とか*とかいろいろ
-<<update ver1.0>>
+
+__UPDATE ver1.0__
 スニペット郡initialシリーズ "at, Wslash, dat"の無効化
-tabトリガーを無効にしただけで残ってはいる。*/
+tabトリガーを無効にしただけで残ってはいる。
+
+__USAGE__
+SublimeText3 build3114で動作確認
+
+__INTRODUCTION__
+sublimetextのショートカットキー
+initialシリーズのマクロやスニペットを動かす
+
+__ACTION__
+None
+
+__TODO__
+None
+*/
 [
 	// comment out
 	{"keys": ["ctrl+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/comment_out.sublime-macro"}, "context":
@@ -36,7 +58,8 @@ tabトリガーを無効にしただけで残ってはいる。*/
 		]
 	},
 	//initial mark
-	{"keys": ["ctrl+alt+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/initial_mark.sublime-macro"}}//, "context":
+	{"keys": ["ctrl+alt+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/initial_mark.sublime-macro"}},//, "context":
+	{"keys": ["alt+/"], "command": "run_macro_file", "args": {"file": "res://Packages/User/initial/initial_star.sublime-macro"}}//, "context":
 	// 	[
 	// 		{ "key": "has_prev_field", "operator": "equal", "operand": true }
 	// 	]

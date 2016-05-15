@@ -12,14 +12,6 @@
 		},
 		"command": "move_to"
 	},
-	{
-		"args":
-		{
-			"extend": false,
-			"to": "bol"
-		},
-		"command": "move_to"
-	},
 	{//snippet trigger
 		"args":
 		{
