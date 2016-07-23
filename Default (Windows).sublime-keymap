@@ -43,7 +43,7 @@ Close work space as ["ctrl+k","ctrl+c"]
 
 
 // -----------------------------------User definition macros------------------------------------
-	{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insert_2spaceNewline.sublime-macro"} },
+	{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insert_3spaceSharpNewline.sublime-macro"} },
 	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
 	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/FX_insertdate.sublime-macro"}, "context":
 		[//"text.enhanced"のスコープ内でのみ動作可能にする

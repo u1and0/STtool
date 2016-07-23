@@ -21,8 +21,8 @@
 		"*.ex4old"
 	],
 	"find_selected_text": true,
-	"font_face": "Meiryo",
-	"font_size": 9,
+	"font_face": "Myrica M",
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -41,6 +41,7 @@
 	"line_padding_top": 2,
 	"match_brackets_angle": true,
 	"preview_on_click": true,
+	"remember_open_files": false,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"show_panel_on_build": true,
