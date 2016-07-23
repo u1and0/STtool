@@ -2,7 +2,36 @@
 "scopeName": "text.enhanced",
 "fileTypes": ["txt","md"],
 "comment": "
-# EnhancedText ver3.4.1
+# EnhancedText ver3.5
+
+# EnhancedText 3.5
+数字をハイライト
+アングルかっこ<>の文字色のつけかた変更
+
+TEST
+12
+123 koa
+ 123 
+12. koreha
+ 12. kor $324 eha
+￥９２もする
+12. 
+12.64.33
+だけどな...
+
+
+@スペース2つにも左右されない  
+@間にスペース 1つで色変え  
+@245  
+
+
+<このかっこは中身の色を変えない>
+<このかっこは<中身の>色を変えない>
+<このかっ>こは<中身の色を変えない>
+<カッコ自体に色がつくだけ>
+<1623>株の番号とかカッコに色付き、数字は別色
+
+
 
 #### UPDATE3.4.1
 行頭の<=2個以上>の並び 色変え
@@ -116,15 +145,24 @@ Color Scheme-Tubnil_kai << customed Tubnil (Sankasan)
        "name": "keyword.control.import",
        "comment": "行頭の*か+か-(Markdownの項目)"
        },
-       {"match": "(\\s|^)\\d+\\.\\s",
-       "name": "constant",
-       "comment": "行頭にある数字とドット(Markdownの数字項目)"
+       {"match": "\\d+",
+       "name": "support.function",
+       "comment": "行頭または空白にある数字と記号(Markdownの数字項目および数字)"
        },
-       {"match": "(^\\>(\\>|\\s)+|^\\>)",
+       # {"match": "(\\s|^)\\d+\\.\\s",
+       # "name": "constant",
+       # "comment": "行頭にある数字とドット(Markdownの数字項目)"
+       # },
+       {"match": "[\\<\\>]",
       # {"match": "^\\>+",
        "name": "keyword",
-       "comment": "行頭の1個以上の>(Markdownの引用符)"
+       "comment": "1個以上の'<'か'>'(Markdownの引用符とカッコ)"
        },
+      #  {"match": "(^\\>(\\>|\\s)+|^\\>)",
+      # # {"match": "^\\>+",
+      #  "name": "keyword",
+      #  "comment": "行頭の1個以上の>(Markdownの引用符)"
+      #  },
 
 
 
@@ -142,7 +180,7 @@ Color Scheme-Tubnil_kai << customed Tubnil (Sankasan)
        "comment": "直前に]がある()内の文字列  ただし]は含まない  (MarkdownのURL)"
        },
        {"match": "\\<+[^\\>]+\\>+",
-       "name": "support.function",
+       "name": "constant",
        "comment": "半角<>内"
        },
        {"match": "＜+[^＞]+＞+",
@@ -175,12 +213,12 @@ Color Scheme-Tubnil_kai << customed Tubnil (Sankasan)
        },
        {"match": "(^|\\s)\\*{2}[^(\\*{2})]*.+\\*{2}($|\\s)",
        "name": "punctuation.definition.string.begin",
-       "comment": "<スペース><星印×2><文字列><星印×2><スペース>(Markdownの太字)"
+       "comment": "<スペース><**><文字列><**><スペース>(Markdownの太字)"
        },
        #数字か.を何文字か打つとバグる
        {"match": "(^|\\s)\\*[^(\\*)]*.+\\*($|\\s)",
        "name": "support.type",
-       "comment": "<スペース><星印><文字列><星印><スペース>(Markdownのイタリック体)"
+       "comment": "<スペース><*><文字列><*><スペース>(Markdownのイタリック体)"
        },
        {"match": "(~~)[^(~~)]*(~~)",
        "name": "comment",

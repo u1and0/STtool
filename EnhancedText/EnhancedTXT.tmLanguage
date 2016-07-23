@@ -4,6 +4,14 @@
 <dict>
 	<key>comment</key>
 	<string> # EnhancedText ver3.4.1
+# EnhancedText 3.5 数字をハイライト アングルかっこ&lt;&gt;の文字色のつけかた変更
+TEST 12 123 koa 123 12. koreha 12. kor $324 eha ￥９２もする 12. 12.64.33 だけどな...
+
+@スペース2つにも左右されない @間にスペース 1つで色変え @245
+
+&lt;このかっこは中身の色を変えない&gt; &lt;このかっこは&lt;中身の&gt;色を変えない&gt; &lt;このかっ&gt;こは&lt;中身の色を変えない&gt; &lt;カッコ自体に色がつくだけ&gt; &lt;1623&gt;株の番号とかカッコに色付き、数字は別色
+
+
 #### UPDATE3.4.1 行頭の&lt;=2個以上&gt;の並び 色変え README追加
 #### UPDATE3.3.1 ()内コメントアウト　行頭でも有効なように修正
 ## INTRODUCTION 自分用シンタックスハイライト markdownサポート
@@ -50,17 +58,17 @@ color ------------------------------------------------------------------------- 
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>行頭にある数字とドット(Markdownの数字項目)</string>
+			<string>行頭または空白にある数字と記号(Markdownの数字項目および数字)</string>
 			<key>match</key>
-			<string>(\s|^)\d+\.\s</string>
+			<string>\d+</string>
 			<key>name</key>
-			<string>constant</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>行頭の1個以上の&gt;(Markdownの引用符)</string>
+			<string>1個以上の'&lt;'か'&gt;'(Markdownの引用符とカッコ)</string>
 			<key>match</key>
-			<string>(^\&gt;(\&gt;|\s)+|^\&gt;)</string>
+			<string>[\&lt;\&gt;]</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
@@ -94,7 +102,7 @@ color ------------------------------------------------------------------------- 
 			<key>match</key>
 			<string>\&lt;+[^\&gt;]+\&gt;+</string>
 			<key>name</key>
-			<string>support.function</string>
+			<string>constant</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -146,7 +154,7 @@ color ------------------------------------------------------------------------- 
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>&lt;スペース&gt;&lt;星印×2&gt;&lt;文字列&gt;&lt;星印×2&gt;&lt;スペース&gt;(Markdownの太字)</string>
+			<string>&lt;スペース&gt;&lt;**&gt;&lt;文字列&gt;&lt;**&gt;&lt;スペース&gt;(Markdownの太字)</string>
 			<key>match</key>
 			<string>(^|\s)\*{2}[^(\*{2})]*.+\*{2}($|\s)</string>
 			<key>name</key>
@@ -154,7 +162,7 @@ color ------------------------------------------------------------------------- 
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>&lt;スペース&gt;&lt;星印&gt;&lt;文字列&gt;&lt;星印&gt;&lt;スペース&gt;(Markdownのイタリック体)</string>
+			<string>&lt;スペース&gt;&lt;*&gt;&lt;文字列&gt;&lt;*&gt;&lt;スペース&gt;(Markdownのイタリック体)</string>
 			<key>match</key>
 			<string>(^|\s)\*[^(\*)]*.+\*($|\s)</string>
 			<key>name</key>
