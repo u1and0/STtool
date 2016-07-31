@@ -2,13 +2,24 @@
 "scopeName": "text.enhanced",
 "fileTypes": ["txt","md"],
 "comment": "
-# EnhancedText ver3.5
+# EnhancedText ver3.6
+
+# EnhancedText 3.6
+シングル、ダブルクォート
+
+##TEST
+'これはハイライト'
+'これは　ハイライトじゃない'
+''ここはハイライト'
+'ここはハイライト'ここはハイライトとするな'
+''ここだけハイライト'''ここだけハイライト'
+
 
 # EnhancedText 3.5
 数字をハイライト
 アングルかっこ<>の文字色のつけかた変更
 
-TEST
+##TEST
 12
 123 koa
  123 
@@ -203,13 +214,13 @@ Color Scheme-Tubnil_kai << customed Tubnil (Sankasan)
        "name": "meta.tag",
        "comment": "[]内"
        },
-       {"match": "\"[^\"]*\"",
+       {"match": "\"[^\"\\s]+\"",
        "name": "keyword.operator",
-       "comment": "ダブルクォーテーション内"
+       "comment": "ダブルクォーテーション内(ただし間に空白が一個あるとキャンセル)"
        },
-       {"match": "\\'[^\\']*\\'",
+       {"match": "\\'[^\\'\\s]+\\'",
        "name": "keyword.operator",
-       "comment": "シングルクォーテーション内"
+       "comment": "シングルクォーテーション内(ただし間に空白が一個あるとキャンセル)"
        },
        {"match": "(^|\\s)\\*{2}[^(\\*{2})]*.+\\*{2}($|\\s)",
        "name": "punctuation.definition.string.begin",

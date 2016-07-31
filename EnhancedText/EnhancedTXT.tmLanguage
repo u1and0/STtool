@@ -3,9 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string> # EnhancedText ver3.4.1
+	<string> # EnhancedText ver3.6
+# EnhancedText 3.6 シングル、ダブルクォート
+##TEST 'これはハイライト' 'これは　ハイライトじゃない' ''ここはハイライト' 'ここはハイライト'ここはハイライトとするな' ''ここだけハイライト'''ここだけハイライト'
+
 # EnhancedText 3.5 数字をハイライト アングルかっこ&lt;&gt;の文字色のつけかた変更
-TEST 12 123 koa 123 12. koreha 12. kor $324 eha ￥９２もする 12. 12.64.33 だけどな...
+##TEST 12 123 koa 123 12. koreha 12. kor $324 eha ￥９２もする 12. 12.64.33 だけどな...
 
 @スペース2つにも左右されない @間にスペース 1つで色変え @245
 
@@ -138,17 +141,17 @@ color ------------------------------------------------------------------------- 
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>ダブルクォーテーション内</string>
+			<string>ダブルクォーテーション内(ただし間に空白が一個あるとキャンセル)</string>
 			<key>match</key>
-			<string>"[^"]*"</string>
+			<string>"[^"\s]+"</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>シングルクォーテーション内</string>
+			<string>シングルクォーテーション内(ただし間に空白が一個あるとキャンセル)</string>
 			<key>match</key>
-			<string>\'[^\']*\'</string>
+			<string>\'[^\'\s]+\'</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
