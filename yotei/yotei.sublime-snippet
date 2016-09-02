@@ -27,10 +27,8 @@ ${1:youbi}__
 1300-1500 ${2:plan}
 1530-1700 ${2:plan}
 
+${3:}
 
-* ${3:todo}
-* ${4:todo}
-* ${5:todo}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>0830</tabTrigger>

@@ -15,14 +15,6 @@
 	{
 		"args":
 		{
-			"extend": false,
-			"to": "bol"
-		},
-		"command": "move_to"
-	},
-	{
-		"args":
-		{
 			"characters": "* "
 		},
 		"command": "insert"
