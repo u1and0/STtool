@@ -27,6 +27,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Anaconda",
 		"GotoRecent",
 		"LaTeXTools",
 		"Paste PDF Text Block",
@@ -47,7 +48,7 @@
 	"show_encoding": true,
 	"show_panel_on_build": true,
 	"sidebar_folders": false,
-	"tab_size": 2,
+	"tab_size": 4,
 	"theme": "Nexus.sublime-theme",
 	"translate_spaces_to_tabs": false,
 	"word_separators": "./\\()\"'-:,.~!@#$%^&;*|+=[]<>{}`~?_　。、「」！？【】『』＜＞～・",
