@@ -21,3 +21,6 @@ c2u_tmp
 *.last-run
 *の競合コピー*.*
 STtools.sublime*
+*.last-run
+*.sublime-project
+*.sublime-workspace

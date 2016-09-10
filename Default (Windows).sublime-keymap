@@ -74,7 +74,10 @@ Close work space as ["ctrl+k","ctrl+c"]
 	{ "keys": ["ctrl+e", "ctrl+s"], "command": "save_evernote_note"},
 	// , "context": [{"key": "evernote_note"}] }
  { "keys": ["ctrl+shift+0"], "command": "input_sequence"},
-
+	{
+		"command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+		{"key": "selector", "operator": "equal", "operand": "source.python"}
+	]},
 
 
 
