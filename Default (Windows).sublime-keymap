@@ -45,11 +45,7 @@ Close work space as ["ctrl+k","ctrl+c"]
 // -----------------------------------User definition macros------------------------------------
 	{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insert_3spaceSharpNewline.sublime-macro"} },
 	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/insertdate.sublime-macro"} },
-	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/FX_insertdate.sublime-macro"}, "context":
-		[//"text.enhanced"のスコープ内でのみ動作可能にする
-			{"key": "selector", "operator": "equal", "operand": "text.fx"},
-		]
-	},
+	{ "keys": ["alt+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/User/FX_insertdate.sublime-macro"}, },
 
 
 
@@ -75,7 +71,7 @@ Close work space as ["ctrl+k","ctrl+c"]
 	// , "context": [{"key": "evernote_note"}] }
  { "keys": ["ctrl+shift+0"], "command": "input_sequence"},
 	{
-		"command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+		"command": "anaconda_doc", "keys": ["alt+shift+d"], "context": [
 		{"key": "selector", "operator": "equal", "operand": "source.python"}
 	]},
 
