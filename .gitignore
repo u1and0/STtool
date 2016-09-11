@@ -13,8 +13,8 @@ Evernote.sublime-settings
 *.cache
 *cache*.*
 encoding_cache.json
-*Package*.*
-!Package.Control.sublime-settings
+
+"Package\ Control."*
 FX_*.*
 Todo.md
 c2u_tmp
