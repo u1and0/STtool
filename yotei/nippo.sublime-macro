@@ -1,0 +1,156 @@
+// 一番上までキャレットを持っていき
+// 改行を入れて
+// `0830`というyotei.sublime-snippetのタブトリガーを実行する
+[
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "duplicate_line"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"characters": "0830"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"default": "	",
+			"exact": false
+		},
+		"command": "insert_best_completion"
+	}
+]
